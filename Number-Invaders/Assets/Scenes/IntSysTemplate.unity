@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &5329196 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3025132153208497741, guid: 69bc6460bf8acb449808c00d592cdfc1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1376646943}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &65176034
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +246,81 @@ MonoBehaviour:
   prefabAlien5: {fileID: 8319183000129338751, guid: bd493ba950c1491418c4c8ba0ca8c8a8,
     type: 3}
   aliensNumber: 6
+--- !u!4 &96150483 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5027406789795341061, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
+    type: 3}
+  m_PrefabInstance: {fileID: 5027406789719113942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &165852039
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1877590730}
+    m_Modifications:
+    - target: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842418041128643649, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: m_Name
+      value: Ray Gun 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ebf744364b16b6f4eb9fb06a265fc00e, type: 3}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,7 +643,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: afbe8470aaf398143900b8c61fecf537, type: 2}
+  - {fileID: 2100000, guid: 34d7b63982c4eb046b4104fdf503daa1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -663,6 +744,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca0e796dca7b32a46a693f687ab21cca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1376646943
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1877590730}
+    m_Modifications:
+    - target: {fileID: 3025132153208497740, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
+      propertyPath: m_Name
+      value: Ray Gun 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025132153208497741, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025132153208497741, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025132153208497741, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025132153208497741, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025132153208497741, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025132153208497741, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025132153208497741, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025132153208497741, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025132153208497741, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025132153208497741, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025132153208497741, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 69bc6460bf8acb449808c00d592cdfc1, type: 3}
 --- !u!1 &1441800306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6137497490245145672, guid: a2aaaa094093a294aade9f5a5ce62bbb,
@@ -938,6 +1088,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1728140438 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+    type: 3}
+  m_PrefabInstance: {fileID: 165852039}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1877590729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1877590730}
+  m_Layer: 0
+  m_Name: Ray Guns
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1877590730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877590729}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 50, y: 0, z: 50}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 96150483}
+  - {fileID: 5329196}
+  - {fileID: 1728140438}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1915285906
 GameObject:
@@ -1336,6 +1525,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0990423822644ae41a02fa5d259694b7, type: 3}
+--- !u!1001 &5027406789719113942
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1877590730}
+    m_Modifications:
+    - target: {fileID: 5027406789795341060, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
+        type: 3}
+      propertyPath: m_Name
+      value: Ray Gun 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027406789795341061, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027406789795341061, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027406789795341061, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027406789795341061, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027406789795341061, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027406789795341061, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027406789795341061, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027406789795341061, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027406789795341061, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027406789795341061, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027406789795341061, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed, type: 3}
 --- !u!1001 &6769992083713527169
 PrefabInstance:
   m_ObjectHideFlags: 0

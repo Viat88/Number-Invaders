@@ -15,7 +15,7 @@ PrefabInstance:
     - target: {fileID: 1790527751875680621, guid: a42bc79790519ef4b851403850113282,
         type: 3}
       propertyPath: m_Color.rgba
-      value: 4278190080
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2388874830906836392, guid: a42bc79790519ef4b851403850113282,
         type: 3}
