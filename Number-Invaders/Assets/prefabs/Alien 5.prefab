@@ -17,6 +17,11 @@ PrefabInstance:
       propertyPath: m_Color.rgba
       value: 4278190080
       objectReference: {fileID: 0}
+    - target: {fileID: 2388874830906836392, guid: a42bc79790519ef4b851403850113282,
+        type: 3}
+      propertyPath: rotationSpeed.y
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2529489765053835523, guid: a42bc79790519ef4b851403850113282,
         type: 3}
       propertyPath: m_Name
