@@ -11,6 +11,12 @@ public class AlienManager : MonoBehaviour
     private float partOfTheSide;
     public int initialDistance;
     public List<GameObject> alienList = new List<GameObject>();
+    private Vector3 leftMissileDirection;                               // Missile on the left side when we look at aliens group
+    private Vector3 rightMissileDirection;                              // Missile on the right side when we look at aliens group
+    public int alienShootingNumber;
+    public GameObject missilePrefab;
+    public float timeBetweenAlienShoot;
+    public bool canShoot;
 
 ////////////////////////////////////////////////////////////
   
@@ -31,6 +37,7 @@ public class AlienManager : MonoBehaviour
     void Start()
     {
         NewTrajectory();
+        StartCoroutine (ShootRoutine());
     }
 
     // Update is called once per frame
@@ -79,21 +86,25 @@ public class AlienManager : MonoBehaviour
 
     private void UpdateDirection(){
 
+        Vector3 aliensAngle = new Vector3();
+
         if (side == "West"){
-            transform.localEulerAngles = new Vector3(0, -90 ,0);
+            aliensAngle = new Vector3(0, -90 ,0);
         }
 
         if (side == "East"){
-            transform.localEulerAngles = new Vector3(0, 90 ,0);
+            aliensAngle = new Vector3(0, 90 ,0);
         }
 
         if (side == "South"){
-            transform.localEulerAngles = new Vector3(0, 180 ,0);
+            aliensAngle = new Vector3(0, 180 ,0);
         }
 
         if (side == "North"){
-            transform.localEulerAngles = new Vector3(0, 0 ,0);
+            aliensAngle = new Vector3(0, 0 ,0);
         }
+
+        transform.localEulerAngles = aliensAngle;
     }
 
 
@@ -104,18 +115,26 @@ public class AlienManager : MonoBehaviour
 
         if (side == "West"){
             transform.position = new Vector3(50 - initialDistance, 0, partOfTheSide);
+            leftMissileDirection = new Vector3(0,0,0);
+            rightMissileDirection = new Vector3(0,180,0);
         }
 
         if (side == "North"){
             transform.position = new Vector3(partOfTheSide,0 , 50 + initialDistance);
+            leftMissileDirection = new Vector3(0,-90,0);
+            rightMissileDirection = new Vector3(0,90,0);
         }
 
         if (side == "East"){
             transform.position = new Vector3(50 + initialDistance, 0, partOfTheSide);
+            leftMissileDirection = new Vector3(0,180,0);
+            rightMissileDirection = new Vector3(0,0,0);
         }
 
         if (side == "South"){
             transform.position = new Vector3(partOfTheSide,0 , 50 - initialDistance);
+            leftMissileDirection = new Vector3(0,90,0);
+            rightMissileDirection = new Vector3(0,-90,0);
         }
 
     }
@@ -134,8 +153,62 @@ public class AlienManager : MonoBehaviour
 
     private void AliensShoot(){
 
+
+        List<int> listIndexAliensShooting = GiveListAliensShooting();          // We get all index of aliens shooting
+
+        for (int i=0; i<listIndexAliensShooting.Count;i++){
+            if (i%2 == 0){
+                ShootMissile(leftMissileDirection, alienList[i]);
+            }
+            else{
+                ShootMissile(rightMissileDirection, alienList[i]);
+            }
+        }
+
+
+
     }
 
 ////////////////////////////////////////////////////////////
     
+    private List<int> GiveListAliensShooting(){
+
+        List<int> listIndexAliensShooting = new List<int>();                    // List of index representing aliens containing by alienList which will shoot
+
+        while (listIndexAliensShooting.Count < alienShootingNumber){            // While there's not the good amount of alien shooting
+
+            int randomIndex = Random.Range(0,alienList.Count);                  // We take a random index
+            if ( !listIndexAliensShooting.Contains(randomIndex) ){              // We check it hasn't already chosen
+                
+                listIndexAliensShooting.Add(randomIndex);                       // We had the index
+            }
+        }
+
+        return listIndexAliensShooting;
+
+    }
+
+////////////////////////////////////////////////////////////
+
+    public void ShootMissile(Vector3 missileAngle, GameObject alien){
+
+        GameObject newMissile = Instantiate (missilePrefab, transform.position, new Quaternion(0,0,0,0));
+        newMissile.transform.localEulerAngles = missileAngle;
+    }
+
+
+////////////////////////////////////////////////////////////
+
+    private IEnumerator ShootRoutine() 
+    {
+        while (canShoot) // 2
+        {
+            AliensShoot(); 
+            yield return new WaitForSeconds(timeBetweenAlienShoot); 
+        } 
+    }
+
+////////////////////////////////////////////////////////////
+
+
 }

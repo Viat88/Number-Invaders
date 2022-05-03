@@ -23,6 +23,7 @@ TagManager:
   - objectiveTriangle
   - Alien
   - Missile
+  - MapEnd
   layers:
   - Default
   - TransparentFX

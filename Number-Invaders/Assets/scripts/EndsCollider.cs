@@ -25,10 +25,6 @@ public class EndsCollider : MonoBehaviour
         if (other.CompareTag("Alien")){
             AlienManager.current.NewTrajectory();
         }
-
-        if (other.CompareTag("Missile")){
-            Destroy(other);
-        }
     }
 
 
