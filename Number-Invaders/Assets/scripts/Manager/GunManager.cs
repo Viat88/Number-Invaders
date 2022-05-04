@@ -11,6 +11,7 @@ public class GunManager : MonoBehaviour
 
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////  
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,10 @@ public class GunManager : MonoBehaviour
         if (other.CompareTag("Player2")){
             Player2Manager.current.onAGun = true;                                           // We are on a gun
             StartCoroutine (Player2Manager.current.TakeGunRoutine(gameObject));             // We check if player really wants the gun
+        }
+
+        if (other.CompareTag("AlienMissile")){
+            Destroy(other.gameObject);
         }
     }
 

@@ -820,6 +820,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &666373308 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6137497491829922050, guid: a2aaaa094093a294aade9f5a5ce62bbb,
+    type: 3}
+  m_PrefabInstance: {fileID: 6878748875394553320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &666373309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666373308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f2336de99693ed479abae350e1d9e9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onAGun: 0
+  gunTaken: {fileID: 0}
+  timeToTakeGun: 0
 --- !u!1001 &761134320
 PrefabInstance:
   m_ObjectHideFlags: 0
