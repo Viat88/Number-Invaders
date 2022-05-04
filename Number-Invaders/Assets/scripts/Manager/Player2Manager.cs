@@ -44,14 +44,19 @@ public class Player2Manager : MonoBehaviour
         
         yield return new WaitForSeconds(timeToTakeGun);
         if (onAGun){
-            gunTaken = gunToTake;
-            TakeGun(gunToTake);
+            
+            if (gunTaken != null){                                      // If player already had a gun
+                gunTaken.transform.parent = null;                       // We let gun on the floor before taking the new one
+            }
+            
+            TakeGun(gunToTake);                                         // We take the new gun
         }                      
     }
 
 ////////////////////////////////////////////////////////////
 
-    private void TakeGun(GameObject gunToTak){                     
+    private void TakeGun(GameObject gunToTake){ 
+        gunTaken = gunToTake;                    
         gunTaken.transform.parent = transform;
     }
 }

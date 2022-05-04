@@ -50,6 +50,7 @@ public class GunManager : MonoBehaviour
 
         if (other.CompareTag("AlienMissile") && gunHolded){
             Destroy(other.gameObject);
+            PlayerHealth.current.TakeDamage();
         }
     }
 
