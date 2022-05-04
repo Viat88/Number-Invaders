@@ -157,11 +157,12 @@ public class AlienManager : MonoBehaviour
         List<int> listIndexAliensShooting = GiveListAliensShooting();          // We get all index of aliens shooting
 
         for (int i=0; i<listIndexAliensShooting.Count;i++){
-            if (i%2 == 0){
-                ShootMissile(leftMissileDirection, alienList[i]);
+            int j = listIndexAliensShooting[i];
+            if (j%2 == 0){
+                ShootMissile(leftMissileDirection, alienList[j]);
             }
             else{
-                ShootMissile(rightMissileDirection, alienList[i]);
+                ShootMissile(rightMissileDirection, alienList[j]);
             }
         }
 
@@ -192,7 +193,7 @@ public class AlienManager : MonoBehaviour
 
     public void ShootMissile(Vector3 missileAngle, GameObject alien){
 
-        GameObject newMissile = Instantiate (missilePrefab, transform.position, new Quaternion(0,0,0,0));
+        GameObject newMissile = Instantiate (missilePrefab, alien.transform.position , new Quaternion(0,0,0,0));
         newMissile.transform.localEulerAngles = missileAngle;
     }
 

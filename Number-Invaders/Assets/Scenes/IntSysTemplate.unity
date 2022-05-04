@@ -198,7 +198,7 @@ MonoBehaviour:
   initialDistance: 100
   alienList: []
   alienShootingNumber: 3
-  missilePrefab: {fileID: 6781409569885124139, guid: 6f671b0dbdb371242b53d996b1acddaf,
+  missilePrefab: {fileID: 7017265645519721053, guid: a9e240a5480926e48bfe55480bb94fae,
     type: 3}
   timeBetweenAlienShoot: 2
   canShoot: 1
