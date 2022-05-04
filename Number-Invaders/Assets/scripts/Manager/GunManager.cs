@@ -6,7 +6,7 @@ public class GunManager : MonoBehaviour
 {
 
 
-    
+    private bool gunHolded = false;
 
 
 
@@ -21,7 +21,13 @@ public class GunManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Player1Manager.current.gunTaken == gameObject || Player2Manager.current.gunTaken == gameObject){
+            gunHolded = true;                                                                                   // The gun is holded
+        }
+
+        else{
+            gunHolded = false;                                                                                  // The gun isn't holded
+        }
     }
 
 
@@ -31,7 +37,7 @@ public class GunManager : MonoBehaviour
     private void OnTriggerEnter( Collider other){
         
         if (other.CompareTag("Player1")){      // If it's player 1
-            Player1Manager.current.onAGun = true;                                           // We are on a gun
+            Player1Manager.current.onAGun = true;                                           // We are on a gun                                                               
             StartCoroutine (Player1Manager.current.TakeGunRoutine(gameObject));             // We check if player really wants the gun
         }
 
@@ -42,7 +48,7 @@ public class GunManager : MonoBehaviour
             StartCoroutine (Player2Manager.current.TakeGunRoutine(gameObject));             // We check if player really wants the gun
         }
 
-        if (other.CompareTag("AlienMissile")){
+        if (other.CompareTag("AlienMissile") && gunHolded){
             Destroy(other.gameObject);
         }
     }
