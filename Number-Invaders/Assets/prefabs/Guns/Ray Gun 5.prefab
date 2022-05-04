@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ray Gun 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3025132153208497740, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
     - target: {fileID: 3025132153208497741, guid: 69bc6460bf8acb449808c00d592cdfc1,
         type: 3}
       propertyPath: m_RootOrder

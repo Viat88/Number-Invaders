@@ -22,8 +22,12 @@ TagManager:
   - Reward
   - objectiveTriangle
   - Alien
-  - Missile
   - MapEnd
+  - Gun5
+  - Gun3
+  - Gun2
+  - AlienMissile
+  - Gun
   layers:
   - Default
   - TransparentFX
