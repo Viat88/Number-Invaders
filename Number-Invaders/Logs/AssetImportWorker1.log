@@ -1,0 +1,122 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.4f1 (becced5a802b) revision 12504301'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19044.1645; Version 2009; 64bit' Language: 'fr' Physical Memory: 8067 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2019.3.0f6\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Wyatt/IMT_Atlantique/TC/Cours/IHM/Number-Invaders/Number-Invaders
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+51337
+Successfully changed project path to: C:/Wyatt/IMT_Atlantique/TC/Cours/IHM/Number-Invaders/Number-Invaders
+C:/Wyatt/IMT_Atlantique/TC/Cours/IHM/Number-Invaders/Number-Invaders
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 348.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.4f1 (becced5a802b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Wyatt/IMT_Atlantique/TC/Cours/IHM/Number-Invaders/Number-Invaders/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD FirePro (TM) W4190M (ID=0x6604)
+    Vendor:   
+    VRAM:     2028 MB
+    Driver:   27.20.20904.1004
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56464
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.210898 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 48.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  9.429 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.312221 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.918 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1414 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 65.1 MB.
+System memory in use after: 65.1 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 1844.
+Total: 8.630300 ms (FindLiveObjects: 0.254500 ms CreateObjectMapping: 0.116100 ms MarkObjects: 7.582700 ms  DeleteObjects: 0.673600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/prefabs/utilities/Indicator.prefab
+  artifactKey: Guid(d934f33a759114db5b98652ef68184d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/utilities/Indicator.prefab using Guid(d934f33a759114db5b98652ef68184d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3248f82acf68959e68cef9be861f2000') in 0.098928 seconds
+  Import took 0.105453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001405 seconds.
+  path: Assets/prefabs/utilities
+  artifactKey: Guid(19f94f0383e31074fb5195037cba0f89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/utilities using Guid(19f94f0383e31074fb5195037cba0f89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04fb7cf0c7530455f50c7aa7e69ffedb') in 0.012013 seconds
+  Import took 0.015521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/prefabs/utilities/Obscuring field.prefab
+  artifactKey: Guid(0990423822644ae41a02fa5d259694b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/utilities/Obscuring field.prefab using Guid(0990423822644ae41a02fa5d259694b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a49468564d0457010ca667d7c76202b7') in 0.034076 seconds
+  Import took 0.038495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000908 seconds.
+  path: Assets/prefabs/utilities/Worldbackground.prefab
+  artifactKey: Guid(28493f9996076784bafd83ac29bbd89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/utilities/Worldbackground.prefab using Guid(28493f9996076784bafd83ac29bbd89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc68a81b77281d903da87ef8536a5c5') in 0.037154 seconds
+  Import took 0.041822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001076 seconds.
+  path: Assets/prefabs/utilities/Cameras.prefab
+  artifactKey: Guid(351674f5e385dab489810361428275cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/utilities/Cameras.prefab using Guid(351674f5e385dab489810361428275cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22704cbf8665e1bed6eaafe99bbdcf87') in 0.022751 seconds
+  Import took 0.025724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000534 seconds.
+  path: Assets/prefabs/utilities/Worldbackground 1.prefab
+  artifactKey: Guid(bd1650f8142a267469db14e83393d4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/utilities/Worldbackground 1.prefab using Guid(bd1650f8142a267469db14e83393d4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ef64384fd88d6ad5176ee5d431b7ae') in 0.012536 seconds
+  Import took 0.016150 seconds .
+
