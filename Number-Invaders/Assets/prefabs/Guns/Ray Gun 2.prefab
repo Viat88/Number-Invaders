@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8710759705794571872}
   - component: {fileID: 8245742784258992207}
   - component: {fileID: 8423315428958303441}
+  - component: {fileID: -2670256508406934730}
   m_Layer: 0
   m_Name: Ray Gun 2
   m_TagString: Gun
@@ -76,6 +77,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fbbbe3c7c11ed340b11e65cda42ae64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-2670256508406934730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842418041128643649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7129505b219db4d8a776561e7bbfec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootSpeed: 100
+  currentSpeed: 0
+  laserPrefab: {fileID: 3654300187964932988, guid: 0a8da9d101de87446868a0ae04b572a3,
+    type: 3}
+  direction: {x: 0, y: 0, z: 0}
+  shootCoolDown: 2
+  shootTimer: 1
 --- !u!1 &5384001147517861262
 GameObject:
   m_ObjectHideFlags: 0

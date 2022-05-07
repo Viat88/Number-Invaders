@@ -28,6 +28,9 @@ TagManager:
   - Gun2
   - AlienMissile
   - Gun
+  - Laser2
+  - Laser3
+  - Laser5
   layers:
   - Default
   - TransparentFX

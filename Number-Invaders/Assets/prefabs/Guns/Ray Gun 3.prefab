@@ -7,6 +7,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2670256508406934730, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: laserPrefab
+      value: 
+      objectReference: {fileID: 7185847030544962911, guid: a1fbba76989a18a42a2b684bdcda1f45,
+        type: 3}
     - target: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
         type: 3}
       propertyPath: m_RootOrder
