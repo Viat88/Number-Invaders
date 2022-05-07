@@ -262,11 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sideDistance: 8
   backDistance: 8
-  prefabAlien2: {fileID: 7334116370233982985, guid: 987c191eb1464274c88febcbcf89c55a,
-    type: 3}
-  prefabAlien3: {fileID: 2840940301999391658, guid: a42bc79790519ef4b851403850113282,
-    type: 3}
-  prefabAlien5: {fileID: 8319183000129338751, guid: bd493ba950c1491418c4c8ba0ca8c8a8,
+  prefabAlien: {fileID: 7334116370233982985, guid: 987c191eb1464274c88febcbcf89c55a,
     type: 3}
   aliensNumber: 6
 --- !u!114 &65176041

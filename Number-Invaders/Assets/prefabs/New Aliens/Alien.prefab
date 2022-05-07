@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 136938945359529160}
   - component: {fileID: 6520143934409677518}
   m_Layer: 0
-  m_Name: Alien 2 Number
+  m_Name: Alien Number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,8 +106,10 @@ GameObject:
   - component: {fileID: 3161795531790718703}
   - component: {fileID: -4811087596217292259}
   - component: {fileID: 7170842060440569355}
+  - component: {fileID: 5989094418493828567}
+  - component: {fileID: 4752383004578773669}
   m_Layer: 0
-  m_Name: Alien 2
+  m_Name: Alien
   m_TagString: Alien
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alienText: {fileID: 6520143934409677518}
-  divider: 2
+  sommePower: 5
 --- !u!114 &7170842060440569355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,6 +158,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: {x: 0, y: 50, z: 0}
+--- !u!65 &5989094418493828567
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7334116370233982985}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 10, z: 7}
+  m_Center: {x: 0.1, y: 2.5, z: 0}
+--- !u!114 &4752383004578773669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7334116370233982985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a76acc8b8418954bb127183d2eb3d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alienText: {fileID: 6520143934409677518}
 --- !u!1001 &7421051176152805102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -236,7 +264,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ab3ce4d5c47c9fe4faf4a597bcdf37fe,
         type: 3}
       propertyPath: m_Name
-      value: Alien 2
+      value: 'Alien '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab3ce4d5c47c9fe4faf4a597bcdf37fe, type: 3}
