@@ -5,8 +5,9 @@ using UnityEngine;
 public class TouchedByLaser : MonoBehaviour
 {
 
-    public TextMesh alienText;
-    private int number;
+    public TextMesh alienText;                                                              // Alien's text containing its number
+    private int number;                                                                     // Number of the alien
+    public float destroyDelay;                                                              // The time destroying alien takes
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////  
     
@@ -15,14 +16,17 @@ public class TouchedByLaser : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update(){}
+    void Update(){
+
+        if (number == 1){
+            DestroyAlien();
+        }
+    }
 
 
 ////////////////////////////////////////////////////////////
 
     private void OnTriggerEnter(Collider other){
-
-        Debug.Log("ok");
 
 
         if (other.CompareTag("Laser2") && number%2 == 0){
@@ -41,7 +45,21 @@ public class TouchedByLaser : MonoBehaviour
             alienText.text = number.ToString();
         }
 
+        if (other.CompareTag("Laser2") || other.CompareTag("Laser3") || other.CompareTag("Laser5")){
+            SoundManager.current.PlayAlienTouchedSound();
+        }
+        
+    }
 
-        Destroy(other.GetComponent<GameObject>());
+////////////////////////////////////////////////////////////
+
+    private void DestroyAlien(){
+
+        AlienManager.current.RemoveAlienFromList(gameObject);
+        Destroy(gameObject, destroyDelay);
+        TweenScale tweenScale = gameObject.AddComponent<TweenScale>();; // 1
+        tweenScale.targetScale = 0; // 2
+        tweenScale.timeToReachTarget = destroyDelay; // 3
+
     }
 }

@@ -43,7 +43,9 @@ public class AlienManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (alienList.Count < alienShootingNumber){                                             // If there is less alien than alienShootingNumber
+            alienShootingNumber = alienList.Count;                                              // We make just shoot all aliens
+        }
     }
 
 
@@ -211,5 +213,10 @@ public class AlienManager : MonoBehaviour
 
 ////////////////////////////////////////////////////////////
 
+    public void RemoveAlienFromList( GameObject alien){
+        alienList.Remove(alien);
+    }
+
+////////////////////////////////////////////////////////////
 
 }

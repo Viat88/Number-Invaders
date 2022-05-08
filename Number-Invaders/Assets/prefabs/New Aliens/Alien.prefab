@@ -184,6 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alienText: {fileID: 6520143934409677518}
+  destroyDelay: 1
 --- !u!1001 &7421051176152805102
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -21,15 +21,16 @@ public class GunShoot : MonoBehaviour
 ///////////////////////// START FUNCTIONS ///////////////////////////////////  
 
     void Start(){
-        previousPosition = transform.position;              // We get the initial position of the gun
-        currentPosition = previousPosition;
+        currentPosition = transform.position;              // We get the initial position of the gun
     }
 
     void Update()
     {
-        shootTimer -= Time.deltaTime;
+        shootTimer -= Time.deltaTime;                      // We decrease shootTimer
+        previousPosition = currentPosition;                // We save currentPosition as the old one
+        currentPosition = transform.position;              // We get the new current position
 
-        if (shootTimer <= 0){                               // If he can shoot
+        if (shootTimer <= 0){                              // If he can shoot
             CheckShoot();
         }
         
@@ -42,8 +43,6 @@ public class GunShoot : MonoBehaviour
     /* Calcul the current Speed and update positions */
     private void CalculSpeed(){
 
-        previousPosition = currentPosition;                                                         // We save currentPosition as the old one
-        currentPosition = transform.position;                                                       // We get the current Position
         currentSpeed = Vector3.Distance(currentPosition, previousPosition) / Time.deltaTime;        // Calcul of the current speed
     }
 
@@ -82,6 +81,7 @@ public class GunShoot : MonoBehaviour
 
         direction = previousPosition - firstPosition;                                           // Previous position is the last one
         newLaser.transform.rotation = Quaternion.LookRotation (direction);                      // We turn the laser in the good direction
+        SoundManager.current.PlayGunShootSound();
 
     }
 

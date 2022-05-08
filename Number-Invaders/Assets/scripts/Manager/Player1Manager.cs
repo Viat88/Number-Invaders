@@ -58,6 +58,7 @@ public class Player1Manager : MonoBehaviour
 ////////////////////////////////////////////////////////////
 
     private void TakeGun(GameObject gunToTake){ 
+        SoundManager.current.PlayGunHandlingSound();
         gunTaken = gunToTake;                    
         gunTaken.transform.parent = transform;
     }
