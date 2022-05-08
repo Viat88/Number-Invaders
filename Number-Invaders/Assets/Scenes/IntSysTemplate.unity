@@ -759,6 +759,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1527142329}
+  - {fileID: 1680299759}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -981,7 +982,7 @@ PrefabInstance:
     - target: {fileID: 6628250516702011102, guid: fa60c9739014f8049997270ae6bfddd6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6628250516702011102, guid: fa60c9739014f8049997270ae6bfddd6,
         type: 3}
@@ -1051,7 +1052,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 886197788}
-  - component: {fileID: 886197789}
   m_Layer: 0
   m_Name: Players Health
   m_TagString: Untagged
@@ -1076,21 +1076,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &886197789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886197787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3a1c1598ca591d429904e6d95df9d9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heart1: {fileID: 333287139}
-  heart2: {fileID: 1373016386}
-  heart3: {fileID: 761134322}
 --- !u!1 &1142627424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,7 +1197,7 @@ PrefabInstance:
     - target: {fileID: 6628250516702011102, guid: fa60c9739014f8049997270ae6bfddd6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6628250516702011102, guid: fa60c9739014f8049997270ae6bfddd6,
         type: 3}
@@ -1540,6 +1525,9 @@ MonoBehaviour:
   gunHandlingSound: {fileID: 8300000, guid: 9807aed188be2a3459ced8e23a168765, type: 3}
   reloadingSound: {fileID: 8300000, guid: 5034636124c582b4893800f869124732, type: 3}
   gunShootSound: {fileID: 8300000, guid: de812cfb519929c4aad9d296f655c81d, type: 3}
+  alienDestructionSound: {fileID: 8300000, guid: 5d80215aaa260f44bb5785c6a2fb8f95,
+    type: 3}
+  gameOverSound: {fileID: 8300000, guid: 79e2c5ba1f57fbc40bebd79215083657, type: 3}
 --- !u!1 &1610871478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,6 +1642,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca0e796dca7b32a46a693f687ab21cca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1680299758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1680299759}
+  - component: {fileID: 1680299760}
+  m_Layer: 0
+  m_Name: GameStateManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1680299759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680299758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 398591547}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1680299760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680299758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a3fba3ebd118c479d0cd6662b3bb62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heart1: {fileID: 333287139}
+  heart2: {fileID: 1373016386}
+  heart3: {fileID: 761134322}
+  gameOverAlienPrefab: {fileID: 6086245106662594782, guid: beabde349dafedc488a33438539ff02c,
+    type: 3}
 --- !u!1 &1681546032
 GameObject:
   m_ObjectHideFlags: 0

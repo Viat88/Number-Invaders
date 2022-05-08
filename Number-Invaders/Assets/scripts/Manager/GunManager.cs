@@ -51,7 +51,7 @@ public class GunManager : MonoBehaviour
         if (other.CompareTag("AlienMissile") && gunHolded){
             SoundManager.current.PlayGunTouchedSound();
             Destroy(other.gameObject);
-            PlayerHealth.current.TakeDamage();
+            GameStateManager.current.TakeDamage();
         }
     }
 

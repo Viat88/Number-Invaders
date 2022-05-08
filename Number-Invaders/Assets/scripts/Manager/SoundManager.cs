@@ -13,6 +13,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip gunHandlingSound;
     public AudioClip reloadingSound;
     public AudioClip gunShootSound;
+    public AudioClip alienDestructionSound;
+    public AudioClip gameOverSound;
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
 
@@ -71,5 +73,13 @@ public class SoundManager : MonoBehaviour
 
     public void PlayGunShootSound(){
         PlaySound(gunShootSound);
+    }
+
+    public void PlayAlienDestructionSound(){
+        PlaySound(alienDestructionSound);
+    }
+
+    public void PlayGameOverSound(){
+        PlaySound(gameOverSound);
     }
 }

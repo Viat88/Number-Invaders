@@ -8,6 +8,7 @@ public class TouchedByLaser : MonoBehaviour
     public TextMesh alienText;                                                              // Alien's text containing its number
     private int number;                                                                     // Number of the alien
     public float destroyDelay;                                                              // The time destroying alien takes
+    private bool firstTime = true;
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////  
     
@@ -18,7 +19,8 @@ public class TouchedByLaser : MonoBehaviour
     // Update is called once per frame
     void Update(){
 
-        if (number == 1){
+        if (number == 1 && firstTime){
+            firstTime = false;
             DestroyAlien();
         }
     }
@@ -55,6 +57,7 @@ public class TouchedByLaser : MonoBehaviour
 
     private void DestroyAlien(){
 
+        SoundManager.current.PlayAlienDestructionSound();
         AlienManager.current.RemoveAlienFromList(gameObject);
         Destroy(gameObject, destroyDelay);
         TweenScale tweenScale = gameObject.AddComponent<TweenScale>();; // 1
