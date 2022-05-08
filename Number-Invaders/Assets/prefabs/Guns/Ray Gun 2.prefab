@@ -96,6 +96,7 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   shootCoolDown: 2
   shootTimer: 1
+  minimumLengthShot: 5
 --- !u!1 &5384001147517861262
 GameObject:
   m_ObjectHideFlags: 0

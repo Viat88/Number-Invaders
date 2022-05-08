@@ -15,9 +15,10 @@ public class GunShoot : MonoBehaviour
     public Vector3 direction;
     public float shootCoolDown;                            // Time between 2 succesives player's shot
     public float shootTimer;                               // Time before player can shoot (value decrease throughout the time)
+    public float minimumLengthShot;                        // The minimum length of the shot movement that player has to do
     
     
-    private bool firstTime = false;                                // Tells if the first time (since player shot) that shootTimer is lower than 0
+    private bool firstTime = false;                         // Tells if the first time (since player shot) that shootTimer is lower than 0
 
 
 
@@ -69,7 +70,7 @@ public class GunShoot : MonoBehaviour
 
         // If player was already shooting and still have the good speed, we do nothing
 
-        if (currentSpeed < shootSpeed && isShooting ){                               // The shot movement is done 
+        if (currentSpeed < shootSpeed && isShooting && CheckLength()){                               // The shot movement is done 
             LaserShoot();                                                            // We whoot
             isShooting = false;                                                      // Player isn't shooting anymore
             shootTimer = shootCoolDown;                                              // We set again shootTimer
@@ -88,9 +89,20 @@ public class GunShoot : MonoBehaviour
         firstTime = true;
         GameObject newLaser = Instantiate(laserPrefab, transform.position, new Quaternion(0,0,0,0));
 
-        direction = previousPosition - firstPosition;                                           // Previous position is the last one
+        
         newLaser.transform.rotation = Quaternion.LookRotation (direction);                      // We turn the laser in the good direction
-        SoundManager.current.PlayGunShootSound();
+        SoundManager.current.PlayGunShootSound();                                               // We play shoot sound
+
+    }
+
+
+////////////////////////////////////////////////////////////
+
+    /* Check the lenght of the player's movement to know if it's enough long*/
+    private bool CheckLength(){
+        direction = previousPosition - firstPosition;                                           // Previous position is the last one
+        float length = Mathf.Sqrt(direction.x*direction.x + direction.y*direction.y + direction.z*direction.z);
+        return length >= minimumLengthShot;
 
     }
 
