@@ -15,6 +15,9 @@ public class GunShoot : MonoBehaviour
     public Vector3 direction;
     public float shootCoolDown;                            // Time between 2 succesives player's shot
     public float shootTimer;                               // Time before player can shoot (value decrease throughout the time)
+    
+    
+    private bool firstTime = false;                                // Tells if the first time (since player shot) that shootTimer is lower than 0
 
 
 
@@ -31,6 +34,11 @@ public class GunShoot : MonoBehaviour
         currentPosition = transform.position;              // We get the new current position
 
         if (shootTimer <= 0){                              // If he can shoot
+            
+            if (firstTime){                                // If shootTimer<0 for the first time since player shot, we say it to player with the sound
+                SoundManager.current.PlayReloadingSound();
+                firstTime =false;
+            }
             CheckShoot();
         }
         
@@ -77,6 +85,7 @@ public class GunShoot : MonoBehaviour
     /* Create the laser shoot */
     private void LaserShoot(){
 
+        firstTime = true;
         GameObject newLaser = Instantiate(laserPrefab, transform.position, new Quaternion(0,0,0,0));
 
         direction = previousPosition - firstPosition;                                           // Previous position is the last one

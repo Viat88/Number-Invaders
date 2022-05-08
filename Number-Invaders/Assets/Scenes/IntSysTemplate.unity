@@ -1538,7 +1538,7 @@ MonoBehaviour:
   alienTouchedSound: {fileID: 8300000, guid: 7a15fc41b1d885940a382f983eb3f01b, type: 3}
   gunTouchedSound: {fileID: 8300000, guid: e0894d72d41ebbe49b525ac71176337b, type: 3}
   gunHandlingSound: {fileID: 8300000, guid: 9807aed188be2a3459ced8e23a168765, type: 3}
-  reloadingSound: {fileID: 8300000, guid: 5fe71794958af0c4e8238336c5fd0994, type: 3}
+  reloadingSound: {fileID: 8300000, guid: 5034636124c582b4893800f869124732, type: 3}
   gunShootSound: {fileID: 8300000, guid: de812cfb519929c4aad9d296f655c81d, type: 3}
 --- !u!1 &1610871478
 GameObject:
