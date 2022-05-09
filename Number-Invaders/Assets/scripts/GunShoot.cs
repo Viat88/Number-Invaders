@@ -16,9 +16,10 @@ public class GunShoot : MonoBehaviour
     public float shootCoolDown;                            // Time between 2 succesives player's shot
     public float shootTimer;                               // Time before player can shoot (value decrease throughout the time)
     public float minimumLengthShot;                        // The minimum length of the shot movement that player has to do
-    
-    
     private bool firstTime = false;                         // Tells if the first time (since player shot) that shootTimer is lower than 0
+
+
+
 
 
 
@@ -106,4 +107,7 @@ public class GunShoot : MonoBehaviour
 
     }
 
+////////////////////////////////////////////////////////////
+
+    
 }

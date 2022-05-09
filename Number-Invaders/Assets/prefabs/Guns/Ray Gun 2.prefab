@@ -77,6 +77,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fbbbe3c7c11ed340b11e65cda42ae64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invincibilityDelay: 3
+  invincibilityFlashDelay: 0.15
+  alienText: {fileID: 5384001147517861262}
+  alien: {fileID: 1536005253918120249}
 --- !u!114 &-2670256508406934730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +280,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e6edd36275fe0545a592f29ee232aa7, type: 3}
+--- !u!1 &1536005253918120249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2e6edd36275fe0545a592f29ee232aa7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1842418039579042920}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2169376090430899075 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2e6edd36275fe0545a592f29ee232aa7,

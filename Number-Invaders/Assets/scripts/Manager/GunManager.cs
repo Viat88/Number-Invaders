@@ -8,6 +8,12 @@ public class GunManager : MonoBehaviour
 
     private bool gunHolded = false;
 
+    private bool isInvincible = false;
+    public float invincibilityDelay = 3f;
+    public float invincibilityFlashDelay = 0.15f;
+    public GameObject alienText;
+    public GameObject alien;
+
 
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////  
@@ -49,9 +55,7 @@ public class GunManager : MonoBehaviour
         }
 
         if (other.CompareTag("AlienMissile") && gunHolded){
-            SoundManager.current.PlayGunTouchedSound();
-            Destroy(other.gameObject);
-            GameStateManager.current.TakeDamage();
+            GunTouched(other.gameObject);
         }
     }
 
@@ -72,5 +76,41 @@ public class GunManager : MonoBehaviour
         }
     }
 
+////////////////////////////////////////////////////////////
+
+    private void GunTouched(GameObject alienMissile){
+
+        if (!isInvincible){                                                             // We check he's not invicible
+            SoundManager.current.PlayGunTouchedSound();                                 // We play the sound
+            Destroy(alienMissile);                                                      // We destroy alien missile
+            GameStateManager.current.TakeDamage();                                      // We inform GameStateManager that players have taken damage
+            isInvincible = true;                                                        // He is no more invicible
+            StartCoroutine(InvicibilityFlash());
+            StartCoroutine(HandleInvicibilityDelay());
+        }
+    }
+
+
+////////////////////////////////////////////////////////////
+
+    private IEnumerator InvicibilityFlash(){
+
+        while (isInvincible){
+            alien.GetComponent<MeshRenderer>().enabled = false;
+            alienText.GetComponent<MeshRenderer>().enabled = false;
+            yield return new WaitForSeconds(invincibilityFlashDelay);
+            alien.GetComponent<MeshRenderer>().enabled = true;
+            alienText.GetComponent<MeshRenderer>().enabled = true; 
+            yield return new WaitForSeconds(invincibilityFlashDelay);
+        }
+    }
+
+////////////////////////////////////////////////////////////
+
+    private IEnumerator HandleInvicibilityDelay(){
+
+        yield return new WaitForSeconds(invincibilityDelay);
+        isInvincible = false;
+    }
 
 }

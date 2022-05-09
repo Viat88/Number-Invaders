@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8a4bb26854bad46a63d726d26571c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialDistance: 100
+  initialDistance: 50
   alienList: []
   alienShootingNumber: 3
   missilePrefab: {fileID: 7017265645519721053, guid: a9e240a5480926e48bfe55480bb94fae,
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21b8ce120b59a9f47b6b3720910b2c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 15
+  movementSpeed: 10
   direction: {x: 0, y: 0, z: -1}
 --- !u!1 &96150482 stripped
 GameObject:
@@ -1528,6 +1528,7 @@ MonoBehaviour:
   alienDestructionSound: {fileID: 8300000, guid: 5d80215aaa260f44bb5785c6a2fb8f95,
     type: 3}
   gameOverSound: {fileID: 8300000, guid: 79e2c5ba1f57fbc40bebd79215083657, type: 3}
+  alienShootSound: {fileID: 8300000, guid: 380a61624a607f042ab5e96218f37633, type: 3}
 --- !u!1 &1610871478
 GameObject:
   m_ObjectHideFlags: 0

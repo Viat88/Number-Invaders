@@ -155,6 +155,7 @@ public class AlienManager : MonoBehaviour
 
     private void AliensShoot(){
 
+        //SoundManager.current.PlayAlienShootSound();
 
         List<int> listIndexAliensShooting = GiveListAliensShooting();          // We get all index of aliens shooting
 
