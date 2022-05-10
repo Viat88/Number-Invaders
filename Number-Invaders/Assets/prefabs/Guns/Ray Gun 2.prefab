@@ -79,8 +79,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invincibilityDelay: 3
   invincibilityFlashDelay: 0.15
-  alienText: {fileID: 5384001147517861262}
-  alien: {fileID: 1536005253918120249}
+  gunText: {fileID: 5384001147517861262}
+  gunModel: {fileID: 1536005253918120249}
 --- !u!114 &-2670256508406934730
 MonoBehaviour:
   m_ObjectHideFlags: 0

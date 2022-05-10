@@ -5,18 +5,18 @@ using UnityEngine;
 public class GunShoot : MonoBehaviour
 {
 
-    private Vector3 previousPosition;                       // The position of the Gun during the previous frame
-    private Vector3 currentPosition;                        // The position of the Gun during the current frame
-    private Vector3 firstPosition;                          // The first position where the gun had a speed higher than shootSpeed
-    public float shootSpeed;                                // Minimum speed of the gun to shoot
-    private bool isShooting = false;                        // Is true if the speed of the gun is steel higher than shootSpeed;
+    private Vector3 previousPosition;                      // The position of the Gun during the previous frame
+    private Vector3 currentPosition;                       // The position of the Gun during the current frame
+    private Vector3 firstPosition;                         // The first position where the gun had a speed higher than shootSpeed
+    public float shootSpeed;                               // Minimum speed of the gun to shoot
+    private bool isShooting = false;                       // Is true if the speed of the gun is steel higher than shootSpeed;
     public float currentSpeed;                             // Current gun's speed
-    public GameObject laserPrefab;                          // Laser's prefab
-    public Vector3 direction;
+    public GameObject laserPrefab;                         // Laser's prefab
+    public Vector3 direction;                              // The direction the laser has to follow
     public float shootCoolDown;                            // Time between 2 succesives player's shot
     public float shootTimer;                               // Time before player can shoot (value decrease throughout the time)
     public float minimumLengthShot;                        // The minimum length of the shot movement that player has to do
-    private bool firstTime = false;                         // Tells if the first time (since player shot) that shootTimer is lower than 0
+    private bool firstTime = false;                        // Tells if the first time (since player shot) that shootTimer is lower than 0
 
 
 
@@ -32,16 +32,16 @@ public class GunShoot : MonoBehaviour
     void Update()
     {
         shootTimer -= Time.deltaTime;                      // We decrease shootTimer
-        previousPosition = currentPosition;                // We save currentPosition as the old one
+        previousPosition = currentPosition;                // previousPosition is the old currentPosition
         currentPosition = transform.position;              // We get the new current position
 
         if (shootTimer <= 0){                              // If he can shoot
             
             if (firstTime){                                // If shootTimer<0 for the first time since player shot, we say it to player with the sound
-                SoundManager.current.PlayReloadingSound();
-                firstTime =false;
+                SoundManager.current.PlayReloadingSound(); // We play the sound
+                firstTime =false;                          // It's not his first time
             }
-            CheckShoot();
+            CheckShoot();                                  // We check that he wants to shoot
         }
         
     }
@@ -58,6 +58,8 @@ public class GunShoot : MonoBehaviour
 
 ////////////////////////////////////////////////////////////
 
+
+    /* Check that the player wants to shoot */
     private void CheckShoot(){
 
         CalculSpeed();                                                               // We calcule the current speed and update positions
@@ -71,7 +73,7 @@ public class GunShoot : MonoBehaviour
 
         // If player was already shooting and still have the good speed, we do nothing
 
-        if (currentSpeed < shootSpeed && isShooting && CheckLength()){                               // The shot movement is done 
+        if (currentSpeed < shootSpeed && isShooting && CheckLength()){               // The shot movement is done 
             LaserShoot();                                                            // We whoot
             isShooting = false;                                                      // Player isn't shooting anymore
             shootTimer = shootCoolDown;                                              // We set again shootTimer
@@ -87,12 +89,12 @@ public class GunShoot : MonoBehaviour
     /* Create the laser shoot */
     private void LaserShoot(){
 
-        firstTime = true;
-        GameObject newLaser = Instantiate(laserPrefab, transform.position, new Quaternion(0,0,0,0));
+        firstTime = true;                                                                              // As he shot, it will be the first time shootTimer<0
+        GameObject newLaser = Instantiate(laserPrefab, transform.position, new Quaternion(0,0,0,0));   // We create a new laser
 
         
-        newLaser.transform.rotation = Quaternion.LookRotation (direction);                      // We turn the laser in the good direction
-        SoundManager.current.PlayGunShootSound();                                               // We play shoot sound
+        newLaser.transform.rotation = Quaternion.LookRotation (direction);                             // We turn the laser in the good direction
+        SoundManager.current.PlayGunShootSound();                                                      // We play shoot sound
 
     }
 
@@ -101,9 +103,9 @@ public class GunShoot : MonoBehaviour
 
     /* Check the lenght of the player's movement to know if it's enough long*/
     private bool CheckLength(){
-        direction = previousPosition - firstPosition;                                           // Previous position is the last one
-        float length = Mathf.Sqrt(direction.x*direction.x + direction.y*direction.y + direction.z*direction.z);
-        return length >= minimumLengthShot;
+        direction = previousPosition - firstPosition;                                                           // Previous position is the last one
+        float length = Mathf.Sqrt(direction.x*direction.x + direction.y*direction.y + direction.z*direction.z); // Calcul of movement's length
+        return length >= minimumLengthShot;                                                                     // true if it's enough long
 
     }
 

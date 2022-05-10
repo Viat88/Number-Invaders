@@ -4,29 +4,11 @@ using UnityEngine;
 
 public class EndsCollider : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
-
-
-
-
+    
     private void OnTriggerEnter(Collider other){
-        if (other.CompareTag("Alien")){
-            AlienManager.current.NewTrajectory();
+        if (other.CompareTag("Alien")){                                 // When an alien entered in this box
+            AlienManager.current.NewTrajectory();                       // We whange the trajectory of alien's group
         }
     }
-
-
 
 }

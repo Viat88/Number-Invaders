@@ -5,17 +5,17 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
 
-    public static SoundManager current;
-    private Vector3 cameraPosition;
+    public static SoundManager current;                 // Unique SoundManager
+    private Vector3 cameraPosition;                     // camera's position to play the sound at this points
 
-    public AudioClip alienTouchedSound;
-    public AudioClip gunTouchedSound;
-    public AudioClip gunHandlingSound;
-    public AudioClip reloadingSound;
-    public AudioClip gunShootSound;
-    public AudioClip alienDestructionSound;
-    public AudioClip gameOverSound;
-    public AudioClip alienShootSound;
+    public AudioClip alienTouchedSound;                 // Sound when an alien is touched by a gun's laser
+    public AudioClip gunTouchedSound;                   // Sound when a gun is touched by an alien's missile
+    public AudioClip gunHandlingSound;                  // Sound to tell player that he has taken the gun he's on
+    public AudioClip reloadingSound;                    // Sound to tell player that he can shoot
+    public AudioClip gunShootSound;                     // Sound when a player shoot
+    public AudioClip alienDestructionSound;             // Sound when an alien is destructe (= when its number is equal to 1)
+    public AudioClip gameOverSound;                     // Sound when the game is lost
+    public AudioClip alienShootSound;                   // Sound when an alien shoots a missile
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
 
@@ -34,21 +34,16 @@ public class SoundManager : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    void Start(){}
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    void Update(){}
 
 
 ////////////////////////////////////////////////////////////
 
+
+    /* Play the sound entered */
     private void PlaySound(AudioClip clip) // 1
     {
         AudioSource.PlayClipAtPoint(clip, cameraPosition); // 2

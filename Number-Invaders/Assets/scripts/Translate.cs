@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Translate : MonoBehaviour
 {
-    public float movementSpeed;
-    public Vector3 direction;
+    public float movementSpeed;                                             // Movement's speed
+    public Vector3 direction;                                               // Movement's direction
 
     void Update()
     {

@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class DestroyOnTrigger : MonoBehaviour
 {
-    public string tagFilter;
+    public string tagFilter;                                // The tag filter that implies to destroy this object
     
-    private void OnTriggerEnter(Collider other) //1
+    private void OnTriggerEnter(Collider other) 
     {
-        if (other.CompareTag(tagFilter)) //2
+        if (other.CompareTag(tagFilter))                    // If it's the good tagFilter
         {
-            Destroy(gameObject);
+            Destroy(gameObject);                            // We destroy the object
         }
     }
 }
