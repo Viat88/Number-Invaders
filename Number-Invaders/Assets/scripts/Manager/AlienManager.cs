@@ -220,4 +220,8 @@ public class AlienManager : MonoBehaviour
 
 ////////////////////////////////////////////////////////////
 
+
+    public void DestroyAliensGroup(){
+        Destroy(gameObject);
+    }
 }

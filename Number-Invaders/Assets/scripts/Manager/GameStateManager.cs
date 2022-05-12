@@ -63,11 +63,18 @@ public class GameStateManager : MonoBehaviour
 
     /* Start game over */
     private void GameOver(){
+        AlienManager.current.DestroyAliensGroup();
         SoundManager.current.PlayGameOverSound();                                                                       // Starts Game over sound
-        GameObject gameOverAlien = Instantiate(gameOverAlienPrefab, new Vector3(35, 5, 19), new Quaternion(0,0,0,0));   // Creates Game over alien
-        gameOverAlien.transform.localEulerAngles = new Vector3 (30,-30,-10);                                            // Turns it
-        Time.timeScale = 0;                                                                                             // Stops the game
+        CreateGameOverMenuAlien();
+        //gameOverAlien.transform.localEulerAngles = new Vector3 (30,-30,-10);                                           // Turns it
+        //Time.timeScale = 0;                                                                                             // Stops the game
         
+    }
+
+////////////////////////////////////////////////////////////
+
+    private void CreateGameOverMenuAlien(){
+        GameObject gameOverAlien = Instantiate(gameOverAlienPrefab, new Vector3(50, 5, 50), new Quaternion(0,0,0,0));   // Creates Game over alien
     }
 
 }
