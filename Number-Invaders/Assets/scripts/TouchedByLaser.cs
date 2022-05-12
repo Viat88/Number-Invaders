@@ -40,34 +40,6 @@ public class TouchedByLaser : MonoBehaviour
                 alienText.text = number.ToString();
             }
         }
-
-
-        /*
-
-        If it's a gun's laser and its number can divide the alien's number
-            We divide the alien's number by the laser's number 
-        if (other.CompareTag("Laser2") && number%2 == 0){
-            number = number/2;
-            alienText.text = number.ToString();
-        }
-
-        if (other.CompareTag("Laser3") && number%3 == 0){
-            number = number/3;
-            alienText.text = number.ToString();
-        }
-
-
-        if (other.CompareTag("Laser5") && number%5 == 0){
-            number = number/5;
-            alienText.text = number.ToString();
-        }
-
-
-        // If it's a gun's laser that touched the alien,  we play the sound
-        if (other.CompareTag("Laser2") || other.CompareTag("Laser3") || other.CompareTag("Laser5")){            
-            SoundManager.current.PlayAlienTouchedSound();
-        }
-        */
     }
 
 ////////////////////////////////////////////////////////////

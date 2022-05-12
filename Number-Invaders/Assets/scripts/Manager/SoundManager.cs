@@ -16,6 +16,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip alienDestructionSound;             // Sound when an alien is destructe (= when its number is equal to 1)
     public AudioClip gameOverSound;                     // Sound when the game is lost
     public AudioClip alienShootSound;                   // Sound when an alien shoots a missile
+    public AudioClip winningSound;                      // Sound when all aliens has been destroyed
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
 
@@ -81,5 +82,9 @@ public class SoundManager : MonoBehaviour
 
     public void PlayAlienShootSound(){
         PlaySound(alienShootSound);
+    }
+
+    public void PlayWinningSound(){
+        PlaySound(winningSound);
     }
 }

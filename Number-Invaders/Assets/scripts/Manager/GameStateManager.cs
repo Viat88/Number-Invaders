@@ -15,6 +15,7 @@ public class GameStateManager : MonoBehaviour
 
     private int numberOfLifes = 3;                                                   // Number of lifes that players have
     public GameObject gameOverAlienPrefab;                                           // Prefab of game over alien
+    private bool alreadyPlayed;
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
 
@@ -35,7 +36,12 @@ public class GameStateManager : MonoBehaviour
     void Start(){}
 
     // Update is called once per frame
-    void Update(){}
+    void Update(){
+        if (AlienManager.current.alienList.Count == 0 && !alreadyPlayed){
+            SoundManager.current.PlayWinningSound();
+            alreadyPlayed = true;
+        }
+    }
 
 ////////////////////////////////////////////////////////////
 

@@ -18,7 +18,10 @@ public class AlienManager : MonoBehaviour
     public float timeBetweenAlienShoot;
     public bool canShoot;
 
-////////////////////////////////////////////////////////////
+    [HideInInspector]
+    public bool hasCameInTheGameArea = false;
+
+///////////////////////// START FUNCTIONS ///////////////////////////////////
   
     void Awake() 
     {
@@ -45,6 +48,10 @@ public class AlienManager : MonoBehaviour
     {
         if (alienList.Count < alienShootingNumber){                                             // If there is less alien than alienShootingNumber
             alienShootingNumber = alienList.Count;                                              // We make just shoot all aliens
+        }
+
+        if ((int) (gameObject.transform.position.x) == 50 || (int) (gameObject.transform.position.z) == 50){
+            hasCameInTheGameArea = true;
         }
     }
 
@@ -82,6 +89,7 @@ public class AlienManager : MonoBehaviour
             partOfTheSide = Random.value*60 + 20; // to have it between 20 and 80
         }
 
+        SideLightsManager.current.LineActivation(side);
     }
 
 ////////////////////////////////////////////////////////////
@@ -146,6 +154,7 @@ public class AlienManager : MonoBehaviour
 
     public void NewTrajectory(){
 
+        hasCameInTheGameArea = false;
         ChooseSide();
         UpdateDirection();
         UpdatePosition();
