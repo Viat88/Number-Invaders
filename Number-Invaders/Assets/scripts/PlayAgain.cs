@@ -14,7 +14,7 @@ public class PlayAgain : MonoBehaviour
     {}
 
     private void OnTriggerEnter(Collider other){
-        if (other.CompareTag("Laser2") || other.CompareTag("Laser3") || other.CompareTag("Laser5")){
+        if (other.CompareTag("Laser")){
             SceneManager.LoadScene("Main Game");
         }
     }

@@ -95,12 +95,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootSpeed: 100
   currentSpeed: 0
-  laserPrefab: {fileID: 3654300187964932988, guid: 0a8da9d101de87446868a0ae04b572a3,
+  laserPrefab: {fileID: 3217008192465742602, guid: 8c9412d4bef044c4d8b883e3adadc827,
     type: 3}
   direction: {x: 0, y: 0, z: 0}
   shootCoolDown: 2
   shootTimer: 1
   minimumLengthShot: 5
+  laserNumber: 2
 --- !u!1 &5384001147517861262
 GameObject:
   m_ObjectHideFlags: 0

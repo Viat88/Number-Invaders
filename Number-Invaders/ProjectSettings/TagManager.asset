@@ -23,15 +23,10 @@ TagManager:
   - objectiveTriangle
   - Alien
   - MapEnd
-  - Gun5
-  - Gun3
-  - Gun2
   - AlienMissile
   - Gun
-  - Laser2
-  - Laser3
-  - Laser5
   - GameAreaEnd
+  - Laser
   layers:
   - Default
   - TransparentFX

@@ -30,9 +30,22 @@ public class TouchedByLaser : MonoBehaviour
 
     private void OnTriggerEnter(Collider other){
 
+        if (other.CompareTag("Laser")){
 
-        /* If it's a gun's laser and its number can divide the alien's number
-            We divide the alien's number by the laser's number */
+            SoundManager.current.PlayAlienTouchedSound();
+            Debug.Log(other.gameObject.name);
+            int laserNumber = int.Parse(other.gameObject.name);
+            if ( number%laserNumber == 0){
+                number = number/laserNumber;
+                alienText.text = number.ToString();
+            }
+        }
+
+
+        /*
+
+        If it's a gun's laser and its number can divide the alien's number
+            We divide the alien's number by the laser's number 
         if (other.CompareTag("Laser2") && number%2 == 0){
             number = number/2;
             alienText.text = number.ToString();
@@ -54,7 +67,7 @@ public class TouchedByLaser : MonoBehaviour
         if (other.CompareTag("Laser2") || other.CompareTag("Laser3") || other.CompareTag("Laser5")){            
             SoundManager.current.PlayAlienTouchedSound();
         }
-        
+        */
     }
 
 ////////////////////////////////////////////////////////////

@@ -1,12 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!54 &-8931858072775134119
+--- !u!54 &6416948144982825004
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3654300187964932988}
+  m_GameObject: {fileID: 3217008192465742602}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -16,39 +16,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &-2496877916091144807
+--- !u!65 &26864310359378412
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3654300187964932988}
+  m_GameObject: {fileID: 3217008192465742602}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2, y: 1, z: 6}
   m_Center: {x: 0, y: 0, z: 3}
---- !u!114 &-3949944470333699202
+--- !u!114 &1329439878063328530
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3654300187964932988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd44b1dc989a91c488c2e605dfcc982d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tagFilter: Alien
---- !u!114 &-3497853562984996505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3654300187964932988}
+  m_GameObject: {fileID: 3217008192465742602}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 21b8ce120b59a9f47b6b3720910b2c3f, type: 3}
@@ -56,20 +43,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 40
   direction: {x: 0, y: 0, z: 1}
---- !u!114 &3266591710780038181
+--- !u!114 &1452626794627213067
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3654300187964932988}
+  m_GameObject: {fileID: 3217008192465742602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd44b1dc989a91c488c2e605dfcc982d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagFilter: Alien
+--- !u!114 &8093951406077276240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3217008192465742602}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd44b1dc989a91c488c2e605dfcc982d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tagFilter: GameAreaEnd
---- !u!1001 &4000378090929051734
+--- !u!1001 &2997013529219756064
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -79,12 +79,12 @@ PrefabInstance:
     - target: {fileID: 374533264773208874, guid: 9b67a80c40d5250479428df08038c912,
         type: 3}
       propertyPath: m_Name
-      value: Laser 2
+      value: Laser
       objectReference: {fileID: 0}
     - target: {fileID: 374533264773208874, guid: 9b67a80c40d5250479428df08038c912,
         type: 3}
       propertyPath: m_TagString
-      value: Laser2
+      value: Laser
       objectReference: {fileID: 0}
     - target: {fileID: 3114517187183617871, guid: 9b67a80c40d5250479428df08038c912,
         type: 3}
@@ -153,9 +153,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b67a80c40d5250479428df08038c912, type: 3}
---- !u!1 &3654300187964932988 stripped
+--- !u!1 &3217008192465742602 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 374533264773208874, guid: 9b67a80c40d5250479428df08038c912,
     type: 3}
-  m_PrefabInstance: {fileID: 4000378090929051734}
+  m_PrefabInstance: {fileID: 2997013529219756064}
   m_PrefabAsset: {fileID: 0}

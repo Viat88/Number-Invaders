@@ -74,9 +74,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7681926013988526395, guid: 69bc6460bf8acb449808c00d592cdfc1,
         type: 3}
+      propertyPath: laserNumber
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681926013988526395, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
       propertyPath: laserPrefab
       value: 
-      objectReference: {fileID: 6561693650358579755, guid: 3dd577efbec56414084cf216046729ed,
+      objectReference: {fileID: 3217008192465742602, guid: 8c9412d4bef044c4d8b883e3adadc827,
         type: 3}
     - target: {fileID: 8853276820896511875, guid: 69bc6460bf8acb449808c00d592cdfc1,
         type: 3}

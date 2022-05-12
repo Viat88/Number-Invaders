@@ -312,6 +312,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1877590730}
     m_Modifications:
+    - target: {fileID: -2670256508406934730, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: laserNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2670256508406934730, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
+      propertyPath: laserPrefab
+      value: 
+      objectReference: {fileID: 3217008192465742602, guid: 8c9412d4bef044c4d8b883e3adadc827,
+        type: 3}
     - target: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
         type: 3}
       propertyPath: m_RootOrder
@@ -375,7 +386,7 @@ PrefabInstance:
     - target: {fileID: 1842418041128643649, guid: ebf744364b16b6f4eb9fb06a265fc00e,
         type: 3}
       propertyPath: m_TagString
-      value: Gun2
+      value: Gun
       objectReference: {fileID: 0}
     - target: {fileID: 8423315428958303441, guid: ebf744364b16b6f4eb9fb06a265fc00e,
         type: 3}
@@ -1273,7 +1284,7 @@ PrefabInstance:
     - target: {fileID: 3025132153208497740, guid: 69bc6460bf8acb449808c00d592cdfc1,
         type: 3}
       propertyPath: m_TagString
-      value: Gun3
+      value: Gun
       objectReference: {fileID: 0}
     - target: {fileID: 3025132153208497741, guid: 69bc6460bf8acb449808c00d592cdfc1,
         type: 3}
@@ -1335,6 +1346,11 @@ PrefabInstance:
       propertyPath: gun
       value: 
       objectReference: {fileID: 5329195}
+    - target: {fileID: 7681926013988526395, guid: 69bc6460bf8acb449808c00d592cdfc1,
+        type: 3}
+      propertyPath: laserNumber
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69bc6460bf8acb449808c00d592cdfc1, type: 3}
 --- !u!1 &1441800306 stripped
@@ -2213,6 +2229,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 478557483072740467, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
         type: 3}
+      propertyPath: laserNumber
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 478557483072740467, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
+        type: 3}
       propertyPath: shootCoolDown
       value: 2
       objectReference: {fileID: 0}
@@ -2234,7 +2255,7 @@ PrefabInstance:
     - target: {fileID: 5027406789795341060, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
         type: 3}
       propertyPath: m_TagString
-      value: Gun5
+      value: Gun
       objectReference: {fileID: 0}
     - target: {fileID: 5027406789795341061, guid: b2e8150a9f2389a4b90ac0b1f6d8ffed,
         type: 3}

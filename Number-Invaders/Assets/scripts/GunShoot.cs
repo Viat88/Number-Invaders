@@ -10,13 +10,14 @@ public class GunShoot : MonoBehaviour
     private Vector3 firstPosition;                         // The first position where the gun had a speed higher than shootSpeed
     public float shootSpeed;                               // Minimum speed of the gun to shoot
     private bool isShooting = false;                       // Is true if the speed of the gun is steel higher than shootSpeed;
-    public float currentSpeed;                             // Current gun's speed
+    private float currentSpeed;                            // Current gun's speed
     public GameObject laserPrefab;                         // Laser's prefab
-    public Vector3 direction;                              // The direction the laser has to follow
+    private Vector3 direction;                             // The direction the laser has to follow
     public float shootCoolDown;                            // Time between 2 succesives player's shot
-    public float shootTimer;                               // Time before player can shoot (value decrease throughout the time)
+    private float shootTimer;                              // Time before player can shoot (value decrease throughout the time)
     public float minimumLengthShot;                        // The minimum length of the shot movement that player has to do
     private bool firstTime = false;                        // Tells if the first time (since player shot) that shootTimer is lower than 0
+    private int laserNumber;
 
 
 
@@ -27,6 +28,7 @@ public class GunShoot : MonoBehaviour
 
     void Start(){
         currentPosition = transform.position;              // We get the initial position of the gun
+        laserNumber = int.Parse(gameObject.transform.GetChild(0).GetComponent<TextMesh>().text);
     }
 
     void Update()
@@ -92,7 +94,7 @@ public class GunShoot : MonoBehaviour
         firstTime = true;                                                                              // As he shot, it will be the first time shootTimer<0
         GameObject newLaser = Instantiate(laserPrefab, transform.position, new Quaternion(0,0,0,0));   // We create a new laser
 
-        
+        newLaser.name = laserNumber.ToString();
         newLaser.transform.rotation = Quaternion.LookRotation (direction);                             // We turn the laser in the good direction
         SoundManager.current.PlayGunShootSound();                                                      // We play shoot sound
 

@@ -9,9 +9,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2670256508406934730, guid: ebf744364b16b6f4eb9fb06a265fc00e,
         type: 3}
+      propertyPath: laserNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -2670256508406934730, guid: ebf744364b16b6f4eb9fb06a265fc00e,
+        type: 3}
       propertyPath: laserPrefab
       value: 
-      objectReference: {fileID: 7185847030544962911, guid: a1fbba76989a18a42a2b684bdcda1f45,
+      objectReference: {fileID: 3217008192465742602, guid: 8c9412d4bef044c4d8b883e3adadc827,
         type: 3}
     - target: {fileID: 1842418041128643648, guid: ebf744364b16b6f4eb9fb06a265fc00e,
         type: 3}
