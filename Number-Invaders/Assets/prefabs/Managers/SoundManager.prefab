@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2867636696013627406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2867636696013627407}
+  - component: {fileID: 2867636696013627404}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2867636696013627407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2867636696013627406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2867636696013627404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2867636696013627406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808806cc9e1241d41afa08488c359d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alienTouchedSound: {fileID: 8300000, guid: 7a15fc41b1d885940a382f983eb3f01b, type: 3}
+  gunTouchedSound: {fileID: 8300000, guid: e0894d72d41ebbe49b525ac71176337b, type: 3}
+  gunHandlingSound: {fileID: 8300000, guid: 9807aed188be2a3459ced8e23a168765, type: 3}
+  reloadingSound: {fileID: 8300000, guid: 5034636124c582b4893800f869124732, type: 3}
+  gunShootSound: {fileID: 8300000, guid: de812cfb519929c4aad9d296f655c81d, type: 3}
+  alienDestructionSound: {fileID: 8300000, guid: 5d80215aaa260f44bb5785c6a2fb8f95,
+    type: 3}
+  gameOverSound: {fileID: 8300000, guid: 79e2c5ba1f57fbc40bebd79215083657, type: 3}
+  alienShootSound: {fileID: 8300000, guid: 380a61624a607f042ab5e96218f37633, type: 3}
+  winningSound: {fileID: 8300000, guid: e275e733889d5e24f8dc6e974dde7981, type: 3}

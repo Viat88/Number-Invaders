@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class GameStateManager : MonoBehaviour
     private int numberOfLifes = 3;                                                   // Number of lifes that players have
     public GameObject gameOverAlienPrefab;                                           // Prefab of game over alien
     private bool alreadyPlayed;
+
+
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
 
@@ -70,17 +73,11 @@ public class GameStateManager : MonoBehaviour
     /* Start game over */
     private void GameOver(){
         AlienManager.current.DestroyAliensGroup();
-        SoundManager.current.PlayGameOverSound();                                                                       // Starts Game over sound
-        CreateGameOverMenuAlien();
-        //gameOverAlien.transform.localEulerAngles = new Vector3 (30,-30,-10);                                           // Turns it
-        //Time.timeScale = 0;                                                                                             // Stops the game
-        
+        SceneManager.LoadScene("Game Over");
     }
 
 ////////////////////////////////////////////////////////////
 
-    private void CreateGameOverMenuAlien(){
-        GameObject gameOverAlien = Instantiate(gameOverAlienPrefab, new Vector3(50, 5, 50), new Quaternion(0,0,0,0));   // Creates Game over alien
-    }
+    
 
 }
