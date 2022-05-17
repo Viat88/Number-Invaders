@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2576940355297428732}
   - component: {fileID: 2576940355297428733}
   - component: {fileID: 2576940355297428734}
+  - component: {fileID: 9193040710333192352}
   m_Layer: 0
   m_Name: Shock Wave
   m_TagString: Untagged
@@ -95,3 +96,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 4.6
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9193040710333192352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2576940355297428735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed31c1ec2ee2a9440a96b832fb309565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSize: 2
+  speed: 1

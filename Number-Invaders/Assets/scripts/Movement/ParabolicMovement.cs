@@ -11,6 +11,7 @@ public class ParabolicMovement : MonoBehaviour
     public float shootDelay;
     private Vector3 direction;
     private float time = 0;
+    public GameObject redTargetPrefab;
 
     /* The y position is in the form: A* d*(d - x2) with d the distance from initialPoint
     */
@@ -25,6 +26,7 @@ public class ParabolicMovement : MonoBehaviour
     {
         initialPoint = transform.position;
         ChooseAPoint();
+        GameObject newRedTarget = Instantiate(redTargetPrefab, targetPoint, new Quaternion(0,0,0,0));
         PreviousCalcul();
     }
 
@@ -34,7 +36,8 @@ public class ParabolicMovement : MonoBehaviour
         time += Time.deltaTime;
         Vector3 pos = Vector3.Lerp(initialPoint, targetPoint, time/shootDelay);
         pos.y = yCalcul();
-        transform.position = pos;
+        transform.Translate(pos - transform.position);
+        //transform.position = pos;
     }
 
 ////////////////////////////////////////////////////////////
@@ -70,7 +73,7 @@ public class ParabolicMovement : MonoBehaviour
 
     private float yCalcul(){
         dCalcul();
-        return coefA * d * (d - x2);
+        return coefA * (d+1f) * ((d+1f) - x2);
     }
 
 ////////////////////////////////////////////////////////////

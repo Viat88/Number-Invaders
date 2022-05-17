@@ -27,6 +27,8 @@ TagManager:
   - Gun
   - GameAreaEnd
   - Laser
+  - Background
+  - Bomb
   layers:
   - Default
   - TransparentFX

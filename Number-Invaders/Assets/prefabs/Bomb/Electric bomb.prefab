@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 7359980357100590767}
   - component: {fileID: 7359980357100590760}
   - component: {fileID: -4108923631321844888}
+  - component: {fileID: -5458955703058112307}
+  - component: {fileID: 5989405756150952844}
   m_Layer: 0
   m_Name: Electric bomb
-  m_TagString: Untagged
+  m_TagString: Bomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +93,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7359980357100590761}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -110,3 +112,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parabolHigh: 50
   shootDelay: 5
+  redTargetPrefab: {fileID: 2525415985878572281, guid: ddb9643a6a1afe948845b70a2a4dbc78,
+    type: 3}
+--- !u!54 &-5458955703058112307
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7359980357100590761}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &5989405756150952844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7359980357100590761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 833b9620010c5db49bc0afb79df91048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shockWavePrefab: {fileID: 2576940355297428735, guid: 13a50443432ced9439b5f66d336453e1,
+    type: 3}

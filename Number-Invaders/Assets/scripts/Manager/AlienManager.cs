@@ -11,15 +11,24 @@ public class AlienManager : MonoBehaviour
     private float partOfTheSide;
     public int initialDistance;
     public List<GameObject> alienList = new List<GameObject>();
+    [HideInInspector]
+    public bool hasCameInTheGameArea = false;
+
+
     private Vector3 leftMissileDirection;                               // Missile on the left side when we look at aliens group
     private Vector3 rightMissileDirection;                              // Missile on the right side when we look at aliens group
     public int alienShootingNumber;
     public GameObject missilePrefab;
     public float timeBetweenAlienShoot;
-    public bool canShoot;
+    private bool canShoot = true;
 
-    [HideInInspector]
-    public bool hasCameInTheGameArea = false;
+
+    public GameObject bombPrefab;
+    public int numberOfBomb;
+    public float delayBetweenSuccessiveBombs;
+    public float delayBetweenBombsSalvo;
+
+    
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
   
@@ -40,7 +49,8 @@ public class AlienManager : MonoBehaviour
     void Start()
     {
         NewTrajectory();
-        StartCoroutine (ShootRoutine());
+        StartCoroutine (ShootMissileRoutine());
+        StartCoroutine (ShootBombSalvoRoutine());
     }
 
     // Update is called once per frame
@@ -48,10 +58,6 @@ public class AlienManager : MonoBehaviour
     {
         if (alienList.Count < alienShootingNumber){                                             // If there is less alien than alienShootingNumber
             alienShootingNumber = alienList.Count;                                              // We make just shoot all aliens
-        }
-
-        if ((int) (gameObject.transform.position.x) == 50 || (int) (gameObject.transform.position.z) == 50){
-            hasCameInTheGameArea = true;
         }
     }
 
@@ -162,9 +168,9 @@ public class AlienManager : MonoBehaviour
 
 ////////////////////////////////////////////////////////////
 
-    private void AliensShoot(){
+    private void AliensMissileShoot(){
 
-        //SoundManager.current.PlayAlienShootSound();
+        SoundManager.current.PlayAlienShootSound();
 
         List<int> listIndexAliensShooting = GiveListAliensShooting();          // We get all index of aliens shooting
 
@@ -212,11 +218,14 @@ public class AlienManager : MonoBehaviour
 
 ////////////////////////////////////////////////////////////
 
-    private IEnumerator ShootRoutine() 
+    private IEnumerator ShootMissileRoutine() 
     {
         while (canShoot) // 2
-        {
-            AliensShoot(); 
+        {   
+            if (hasCameInTheGameArea){
+                AliensMissileShoot(); 
+            }
+            
             yield return new WaitForSeconds(timeBetweenAlienShoot); 
         } 
     }
@@ -232,5 +241,34 @@ public class AlienManager : MonoBehaviour
 
     public void DestroyAliensGroup(){
         Destroy(gameObject);
+    }
+
+////////////////////////////////////////////////////////////
+
+    private IEnumerator ShootBombSalvoRoutine(){
+        while (canShoot){
+            if (hasCameInTheGameArea){
+                AlienBombShoot();
+            }
+            yield return new WaitForSeconds(delayBetweenBombsSalvo);
+        }
+    }
+
+    private IEnumerator ShootBombsRoutine(){
+
+        int count =0;
+
+        while (count< numberOfBomb){
+            GameObject newBomb = Instantiate(bombPrefab, transform.position, new Quaternion(0,0,0,0));
+            SoundManager.current.PlayBombShootSound();
+            count += 1;
+            yield return new WaitForSeconds(delayBetweenSuccessiveBombs);
+        }
+    }
+
+////////////////////////////////////////////////////////////
+
+    private void AlienBombShoot(){
+        StartCoroutine(ShootBombsRoutine());
     }
 }

@@ -18,6 +18,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip gameOverSound;                     // Sound when the game is lost
     public AudioClip alienShootSound;                   // Sound when an alien shoots a missile
     public AudioClip winningSound;                      // Sound when all aliens has been destroyed
+    public AudioClip bombExplosionSound;                // Sound when a bomb exploses
+    public AudioClip bombShootSound;                    // Sound when a bomb is shot
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
 
@@ -91,5 +93,13 @@ public class SoundManager : MonoBehaviour
 
     public void PlayWinningSound(){
         PlaySound(winningSound);
+    }
+
+    public void PlayBombExplosionSound(){
+        PlaySound(bombExplosionSound);
+    }
+
+    public void PlayBombShootSound(){
+        PlaySound(bombShootSound);
     }
 }

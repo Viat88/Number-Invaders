@@ -79,7 +79,7 @@ public class GunManager : MonoBehaviour
     private void GunTouched(GameObject alienMissile){
 
         if (!isInvincible){                                                             // We check he's not invicible
-            SoundManager.current.PlayGunTouchedSound();                                 // We play the sound
+            
             Destroy(alienMissile);                                                      // We destroy alien missile
             GameStateManager.current.TakeDamage();                                      // We inform GameStateManager that players have taken damage
             isInvincible = true;                                                        // He is invicible

@@ -52,6 +52,8 @@ public class GameStateManager : MonoBehaviour
     /* Deletes a players' life */
     public void TakeDamage(){
 
+        SoundManager.current.PlayGunTouchedSound();                                 // We play the sound
+
         if (numberOfLifes == 3){                        // We just delete one heart
             heart1.SetActive(false);
         }
