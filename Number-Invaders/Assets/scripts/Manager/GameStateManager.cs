@@ -80,6 +80,8 @@ public class GameStateManager : MonoBehaviour
 
 ////////////////////////////////////////////////////////////
 
-    
+    public void Victory(){
+        SceneManager.LoadScene("Victory");
+    }
 
 }

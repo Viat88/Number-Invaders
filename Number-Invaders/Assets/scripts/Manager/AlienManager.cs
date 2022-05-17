@@ -234,6 +234,9 @@ public class AlienManager : MonoBehaviour
 
     public void RemoveAlienFromList( GameObject alien){
         alienList.Remove(alien);
+        if (alienList.Count == 0){
+            GameStateManager.current.Victory();
+        }
     }
 
 ////////////////////////////////////////////////////////////

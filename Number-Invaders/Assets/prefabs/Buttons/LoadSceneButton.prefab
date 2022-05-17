@@ -146,7 +146,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: af251da01e320414181508b307d6f2ae, type: 3}
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -186,7 +186,7 @@ TextMesh:
   m_FontSize: 90
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: af251da01e320414181508b307d6f2ae, type: 3}
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
     rgba: 4293394179
@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 7991642496673012182}
   - component: {fileID: 5489327298632464311}
   m_Layer: 0
-  m_Name: Button 1
+  m_Name: LoadSceneButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -633,7 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67ac1d5e64e96746b30c29372d62b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneToLoad: Main Game
+  sceneToLoad: 
   timeToChooseButton: 3
   button: {fileID: 5834903708235259405}
   initialColor: {r: 0.019607844, g: 0.67058825, b: 0.03529412, a: 0}
