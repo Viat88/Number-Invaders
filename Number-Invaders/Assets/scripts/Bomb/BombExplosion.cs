@@ -27,11 +27,14 @@ public class BombExplosion : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        if (other.CompareTag("Background"))                    // If it's the good tagFilter
+        if (other.CompareTag("BombTarget"))                    // If it's the good tagFilter
         {
+            
             SoundManager.current.PlayBombExplosionSound();
             ShockWave();
             Destroy(gameObject);                            // We destroy the object
+            
+            
             
         }
     }

@@ -8,9 +8,17 @@ public class DestroyOnTrigger : MonoBehaviour
     
     private void OnTriggerEnter(Collider other) 
     {
-        if (other.CompareTag(tagFilter))                    // If it's the good tagFilter
-        {
-            Destroy(gameObject);                            // We destroy the object
+        if (gameObject.CompareTag("BombTarget")){
+            if(other.CompareTag(tagFilter) && other.name == gameObject.name){
+                Destroy(gameObject);                            // We destroy the object
+            }
+        }
+
+        else{
+            if (other.CompareTag(tagFilter))                    // If it's the good tagFilter
+            {
+                Destroy(gameObject);                            // We destroy the object
+            }
         }
     }
 }

@@ -65,8 +65,9 @@ public class GunShoot : MonoBehaviour
     private void CheckShoot(){
 
         CalculSpeed();                                                               // We calcule the current speed and update positions
+        bool isHolded = gameObject.GetComponent<GunManager>().gunHolded;
 
-        if (currentSpeed >= shootSpeed && !isShooting){                              // If the player is shooting and if he wasn't shooting before
+        if (currentSpeed >= shootSpeed && !isShooting && isHolded){                              // If the player is shooting and if he wasn't shooting before
                                                     
             isShooting = true;                                                       // We set that he's shooting
             firstPosition = previousPosition;                                        // We save the first position
@@ -75,7 +76,9 @@ public class GunShoot : MonoBehaviour
 
         // If player was already shooting and still have the good speed, we do nothing
 
-        if (currentSpeed < shootSpeed && isShooting && CheckLength()){               // The shot movement is done 
+        
+
+        if (currentSpeed < shootSpeed && isShooting && CheckLength() && isHolded){               // The shot movement is done 
             LaserShoot();                                                            // We whoot
             isShooting = false;                                                      // Player isn't shooting anymore
             shootTimer = shootCoolDown;                                              // We set again shootTimer

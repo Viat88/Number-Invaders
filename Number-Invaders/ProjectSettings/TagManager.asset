@@ -24,12 +24,13 @@ TagManager:
   - Alien
   - MapEnd
   - AlienMissile
-  - Gun
   - GameAreaEnd
   - Laser
   - Background
   - Bomb
   - Bomb wave
+  - Weapon
+  - BombTarget
   layers:
   - Default
   - TransparentFX

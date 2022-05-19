@@ -12,6 +12,7 @@ public class ParabolicMovement : MonoBehaviour
     private Vector3 direction;
     private float time = 0;
     public GameObject redTargetPrefab;
+    
 
     /* The y position is in the form: A* d*(d - x2) with d the distance from initialPoint
     */
@@ -27,6 +28,7 @@ public class ParabolicMovement : MonoBehaviour
         initialPoint = transform.position;
         ChooseAPoint();
         GameObject newRedTarget = Instantiate(redTargetPrefab, targetPoint, new Quaternion(0,0,0,0));
+        newRedTarget.name = gameObject.name;
         PreviousCalcul();
     }
 
@@ -72,7 +74,7 @@ public class ParabolicMovement : MonoBehaviour
 
     private float yCalcul(){
         dCalcul();
-        return coefA * (d+1f) * ((d+1f) - x2);
+        return coefA * d * (d - x2);
     }
 
 ////////////////////////////////////////////////////////////

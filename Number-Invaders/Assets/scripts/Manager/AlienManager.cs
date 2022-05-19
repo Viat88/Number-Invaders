@@ -262,9 +262,9 @@ public class AlienManager : MonoBehaviour
         int count =0;
 
         while (count< numberOfBomb){
-            Vector3 bombPosition = transform.position;
-            bombPosition.y=5;
-            GameObject newBomb = Instantiate(bombPrefab, bombPosition, new Quaternion(0,0,0,0));
+
+            GameObject newBomb = Instantiate(bombPrefab, transform.position, new Quaternion(0,0,0,0));
+            newBomb.name = count.ToString();
             SoundManager.current.PlayBombShootSound();
             count += 1;
             yield return new WaitForSeconds(delayBetweenSuccessiveBombs);
