@@ -51,7 +51,7 @@ public class GunManager : MonoBehaviour
             StartCoroutine (Player2Manager.current.TakeGunRoutine(gameObject));             // We check if player really wants the gun
         }
 
-        if (other.CompareTag("AlienMissile") && gunHolded){
+        if ((other.CompareTag("AlienMissile") || other.CompareTag("Bomb wave")) && gunHolded){
             GunTouched(other.gameObject);
         }
     }

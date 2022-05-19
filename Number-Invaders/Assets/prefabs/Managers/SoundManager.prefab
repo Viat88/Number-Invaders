@@ -48,8 +48,10 @@ MonoBehaviour:
   gunHandlingSound: {fileID: 8300000, guid: 9807aed188be2a3459ced8e23a168765, type: 3}
   reloadingSound: {fileID: 8300000, guid: 5034636124c582b4893800f869124732, type: 3}
   gunShootSound: {fileID: 8300000, guid: de812cfb519929c4aad9d296f655c81d, type: 3}
-  alienDestructionSound: {fileID: 8300000, guid: 5d80215aaa260f44bb5785c6a2fb8f95,
+  alienDestructionSound: {fileID: 8300000, guid: d56083d016c3add42915de58d171ff84,
     type: 3}
   gameOverSound: {fileID: 8300000, guid: 79e2c5ba1f57fbc40bebd79215083657, type: 3}
   alienShootSound: {fileID: 8300000, guid: 380a61624a607f042ab5e96218f37633, type: 3}
-  winningSound: {fileID: 8300000, guid: e275e733889d5e24f8dc6e974dde7981, type: 3}
+  victorySound: {fileID: 8300000, guid: e275e733889d5e24f8dc6e974dde7981, type: 3}
+  bombExplosionSound: {fileID: 8300000, guid: b103f9d4e304eeb4291787b9d002dc35, type: 3}
+  bombShootSound: {fileID: 8300000, guid: 2001b4063b462ac4484f8c01bb84f3d0, type: 3}

@@ -37,14 +37,13 @@ public class ParabolicMovement : MonoBehaviour
         Vector3 pos = Vector3.Lerp(initialPoint, targetPoint, time/shootDelay);
         pos.y = yCalcul();
         transform.Translate(pos - transform.position);
-        //transform.position = pos;
     }
 
 ////////////////////////////////////////////////////////////
 
     private void ChooseAPoint(){
-        float x = Random.value*60 + 20;                                                          // Between 20 and 80
-        float z = Random.value*60 + 20;                                                          // Between 20 and 80
+        float x = Random.value*80 + 10;                                                          // Between 20 and 80
+        float z = Random.value*80 + 10;                                                          // Between 20 and 80
 
         targetPoint = new Vector3(x,0,z);
     }

@@ -44,16 +44,6 @@ public class BombShockWave : MonoBehaviour
         transform.localScale = new Vector3(newSize, newSize, newSize);
     }
 
-///////////////////////// TRIGGER FUNCTIONS /////////////////////////////////
-
-    private void OnTriggerEnter( Collider other){
-
-        if (other.CompareTag("Player1") || other.CompareTag("Player2")){
-            
-            GameStateManager.current.TakeDamage();
-            
-        }
-    }
 
     
 }

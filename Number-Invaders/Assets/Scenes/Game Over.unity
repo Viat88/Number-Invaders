@@ -130,6 +130,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2867636696013627404, guid: eb7d5dae3db8fab43897dc7b7f8cff8c,
+        type: 3}
+      propertyPath: bombExplosionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: b103f9d4e304eeb4291787b9d002dc35, type: 3}
     - target: {fileID: 2867636696013627406, guid: eb7d5dae3db8fab43897dc7b7f8cff8c,
         type: 3}
       propertyPath: m_Name

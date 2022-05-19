@@ -6,7 +6,6 @@ public class BombExplosion : MonoBehaviour
 {
 
     public GameObject shockWavePrefab;
-    private bool firstTimeTouchingBackground = true;
 
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
@@ -30,12 +29,9 @@ public class BombExplosion : MonoBehaviour
     {
         if (other.CompareTag("Background"))                    // If it's the good tagFilter
         {
-            if (!firstTimeTouchingBackground){
-                SoundManager.current.PlayBombExplosionSound();
-                ShockWave();
-                Destroy(gameObject);                            // We destroy the object
-            }
-            firstTimeTouchingBackground = false;
+            SoundManager.current.PlayBombExplosionSound();
+            ShockWave();
+            Destroy(gameObject);                            // We destroy the object
             
         }
     }

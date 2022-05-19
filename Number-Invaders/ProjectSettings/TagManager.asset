@@ -29,6 +29,7 @@ TagManager:
   - Laser
   - Background
   - Bomb
+  - Bomb wave
   layers:
   - Default
   - TransparentFX

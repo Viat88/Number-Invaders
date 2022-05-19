@@ -17,7 +17,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip alienDestructionSound;             // Sound when an alien is destructe (= when its number is equal to 1)
     public AudioClip gameOverSound;                     // Sound when the game is lost
     public AudioClip alienShootSound;                   // Sound when an alien shoots a missile
-    public AudioClip winningSound;                      // Sound when all aliens has been destroyed
+    public AudioClip victorySound;                      // Sound when all aliens has been destroyed
     public AudioClip bombExplosionSound;                // Sound when a bomb exploses
     public AudioClip bombShootSound;                    // Sound when a bomb is shot
 
@@ -41,6 +41,10 @@ public class SoundManager : MonoBehaviour
     void Start(){
         if (SceneManager.GetActiveScene().name == "Game Over"){
             PlayGameOverSound();                                                                       // Starts Game over sound
+        }
+
+        if (SceneManager.GetActiveScene().name == "Victory"){
+            PlayVictorySound();                                                                       // Starts Game over sound
         }
     }
 
@@ -91,8 +95,8 @@ public class SoundManager : MonoBehaviour
         PlaySound(alienShootSound);
     }
 
-    public void PlayWinningSound(){
-        PlaySound(winningSound);
+    public void PlayVictorySound(){
+        PlaySound(victorySound);
     }
 
     public void PlayBombExplosionSound(){
