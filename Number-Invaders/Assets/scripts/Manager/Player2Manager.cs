@@ -32,6 +32,15 @@ public class Player2Manager : MonoBehaviour
     // Update is called once per frame
     void Update(){}
 
+///////////////////////// TRIGGER FUNCTIONS ///////////////////////////////// 
+
+    private void OnTriggerExit(Collider other){
+        
+        if (other.name == "Gun Turret"){
+            onAGun = false;
+            GunTuretManager.current.NoPlayerHolding();
+        }
+    }
 
 
 ////////////////////////////////////////////////////////////
@@ -65,6 +74,10 @@ public class Player2Manager : MonoBehaviour
         gunHolded = gunToTake;                                           // The gun holding by player is the one he was trying to take
         if (gunToTake.name.Contains("Ray Gun")){
             gunHolded.transform.parent = transform;                          // The gun is now a child of player
+        }
+
+        if (gunToTake.name == "Gun Turret"){
+            GunTuretManager.current.PlayerHolding("Player2");
         }
     }
 }
