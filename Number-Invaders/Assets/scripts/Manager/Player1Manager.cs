@@ -40,6 +40,7 @@ public class Player1Manager : MonoBehaviour
         
         if (other.name == "Gun Turret"){
             onAGun = false;
+            gunHolded = null;
             GunTuretManager.current.NoPlayerHolding();
         }
     }
@@ -48,6 +49,7 @@ public class Player1Manager : MonoBehaviour
 
     /* Coroutine to take the gun */
     public IEnumerator TakeGunRoutine( GameObject gunToTake){
+        Debug.Log("ok");
         
         yield return new WaitForSeconds(timeToTakeGun);                 // We wait the time needed to take a gun
         if (onAGun){                                                    // If he's still on a gun

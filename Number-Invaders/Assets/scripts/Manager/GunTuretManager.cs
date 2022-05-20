@@ -32,7 +32,6 @@ public class GunTuretManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(ShootMissileCoroutine());
     }
 
     // Update is called once per frame
@@ -58,6 +57,7 @@ public class GunTuretManager : MonoBehaviour
     public void NoPlayerHolding(){
         player1Handling = false;
         player2Handling = false;
+        StopCoroutine(ShootMissileCoroutine());
     }
 
 ////////////////////////////////////////////////////////////
@@ -66,10 +66,12 @@ public class GunTuretManager : MonoBehaviour
 
         if (name == "Player1"){
             player1Handling = true;
+            StartCoroutine(ShootMissileCoroutine());
         }
 
         if (name == "Player2"){
             player2Handling = true;
+            StartCoroutine(ShootMissileCoroutine());
         }
     }
 
@@ -77,10 +79,10 @@ public class GunTuretManager : MonoBehaviour
 
     private IEnumerator ShootMissileCoroutine(){
 
-        while (true){
+        while (player1Handling || player2Handling){
             CreateMissile();
             yield return new WaitForSeconds(delayBetweenMissiles);
-            //ShootMissile();
+            ShootMissile();
         }
     }
 
@@ -88,9 +90,10 @@ public class GunTuretManager : MonoBehaviour
 
     private void CreateMissile(){
         currentMissile = Instantiate (missilePrefab, new Vector3(0,0,0) , new Quaternion(0,0,0,0));
-        currentMissile.transform.parent = gameObject.transform;
-        currentMissile.transform.position = new Vector3(0, 5 ,0);
         currentMissile.transform.localEulerAngles = transform.localEulerAngles;
+        currentMissile.transform.parent = gameObject.transform;
+        currentMissile.transform.position = new Vector3(50f, 7f , 50f);
+        
         
         
     }
@@ -98,6 +101,7 @@ public class GunTuretManager : MonoBehaviour
 ////////////////////////////////////////////////////////////
 
     private void ShootMissile(){
+        currentMissile.transform.parent = null;
         currentMissile.GetComponent<Translate>().enabled = true;
     }
 }
