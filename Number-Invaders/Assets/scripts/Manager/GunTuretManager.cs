@@ -10,6 +10,10 @@ public class GunTuretManager : MonoBehaviour
     public GameObject player2;
     private bool player1Handling = false;
     private bool player2Handling = false;
+    public GameObject missilePrefab;
+    public float delayBetweenMissiles;
+    private GameObject currentMissile;
+
     
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
 
@@ -28,7 +32,7 @@ public class GunTuretManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(ShootMissileCoroutine());
     }
 
     // Update is called once per frame
@@ -67,5 +71,32 @@ public class GunTuretManager : MonoBehaviour
         if (name == "Player2"){
             player2Handling = true;
         }
+    }
+
+////////////////////////////////////////////////////////////
+
+    private IEnumerator ShootMissileCoroutine(){
+
+        while (true){
+            CreateMissile();
+            yield return new WaitForSeconds(delayBetweenMissiles);
+            //ShootMissile();
+        }
+    }
+
+////////////////////////////////////////////////////////////
+
+    private void CreateMissile(){
+        currentMissile = Instantiate (missilePrefab, new Vector3(0,0,0) , new Quaternion(0,0,0,0));
+        currentMissile.transform.parent = gameObject.transform;
+        currentMissile.transform.position = new Vector3(49.85f ,7.5f ,50f);
+        currentMissile.transform.localEulerAngles = transform.localEulerAngles;
+        
+    }
+
+////////////////////////////////////////////////////////////
+
+    private void ShootMissile(){
+        currentMissile.GetComponent<Translate>().enabled = true;
     }
 }
