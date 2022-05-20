@@ -89,8 +89,9 @@ public class GunTuretManager : MonoBehaviour
     private void CreateMissile(){
         currentMissile = Instantiate (missilePrefab, new Vector3(0,0,0) , new Quaternion(0,0,0,0));
         currentMissile.transform.parent = gameObject.transform;
-        currentMissile.transform.position = new Vector3(-0.01f ,0.8f ,-0.2f);
+        currentMissile.transform.position = new Vector3(0, 5 ,0);
         currentMissile.transform.localEulerAngles = transform.localEulerAngles;
+        
         
     }
 

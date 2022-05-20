@@ -2,16 +2,34 @@
 Final project of IHM
 
 
-The game start and create 6 aliens, children of Aliens Group (on which we can modify the number of alien). Each one is an alien with a number which can be devided by randomly 2,3 or 5.
-A side is chosen (West, East, North or South): it's from this side that aliens will come. Then, a percent of the length (of a side) is randomly chosen to know exactly from where it comes.
+The game start with a Start Scene on which there is only one button, for the moment, which is "Play Game". Players need only one of them to be over it (for several seconds) in order to start. 
+(Button will get a darker color when he detect a player above)
 
-Aliens cross the game area and slowly turn round and round, then, when it reaches the end of the map (bigger than the game area), it chooses again a side and a percent of the lenght.
+Then it goes on the Main Game Scene in which there is aliens that will cross the map (number of aliens can be set in "Aliens Group > Create Alien > Alien Number"). A light will flash from 
+the side they are coming from. 
+Each alien has a number which can be written as (2^i)*(3^j)*(5^k) with 1=< i+j+k <= N0 with N0 a number we can set (here it's 5)
 
-AlienManager has a coroutine that allows aliens to shoot: we only have to define the time between 2 succesives shot and how many aliens shoot at the same time. Then, during the game, 
-AlienManager chooses randomly aliens that will shoot and they shoot orthogonally to the aliens group's direction. Aliens missile are destroyed when they reached the end of the map.
+Aliens will then shoot missile orthogonally to their movement's direction at regular time interval we can set. 
+Aliens will also shoot 4 bombs (we can set the number) that will do a parabolic movement before explosing on the floor where there was red target. Again, it does it at regular time interval
+that we can set.
+ 
+3 guns are displayed on the game area and each has a number: 2, 3 and 5.
+Each player can take a gun: he only has to stay above few seconds (a time we can set) and he will hear a sound meaning the gun is taken.
+A player holding a gun can shoot a laser by doing a line (as if you were playing at a palet air hockey) that has to be enough fast and long (two parameters we can set and that we try to evaluate
+during the last lab but we have to try again)
 
-3 guns are displayed on the game area: gun 2,3 and 5. Each one can be taken: player has just to wait 2 secondes on it. If he wants to take an other one, he just has to do the same thing 
-with the new gun (the old one will be put down).
+If a laser touches an alien, the alien's number is divided by the number of the gun which has shot the laser (if only it's possible): for example, if the alien's number is 20 and it's
+touched by a laser of number 5, it will go to 4 but nothing happen with a laser of gun 3. In all cases, a sound is played and the missile is destroyed.
 
-When a alien's missile touch a gun hold by one of both players, players lost one of the 3 hearts displayed in the middle of the game area (there is not a end game screen yet).
+When the alien's number goes to 1, the alien is destroyed and a sound is played. When all aliens are destroyed, a Victory Scene is played with a victory sound. In this scene, there is just
+a button to go to the Title Menu.
+
+All alien's missile and players' laser are destroyed when they go outside of the game area.
+
+3 green hearts are displayed on the game area, they represent the players health (3 for both together). When a gun holded by a player is touched by a alien's missile or the shock wave of a 
+alien's bomb, a sound is played and players loose a life and touched player is invicible during few seconds (the gun is flashing to aware him he is invincible).
+
+When players have no more life, a Game Over Scene and sound are played. In this scene again, there is only one button to go the Title Menu.
+
+
 
