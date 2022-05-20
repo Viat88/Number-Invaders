@@ -77,6 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fbbbe3c7c11ed340b11e65cda42ae64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gunHolded: 0
   invincibilityDelay: 3
   invincibilityFlashDelay: 0.15
   gunText: {fileID: 5384001147517861262}
@@ -93,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7129505b219db4d8a776561e7bbfec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootSpeed: 100
+  shootSpeed: 400
   laserPrefab: {fileID: 3217008192465742602, guid: 8c9412d4bef044c4d8b883e3adadc827,
     type: 3}
   shootCoolDown: 2
