@@ -31,5 +31,7 @@ alien's bomb, a sound is played and players loose a life and touched player is i
 
 When players have no more life, a Game Over Scene and sound are played. In this scene again, there is only one button to go the Title Menu.
 
-
+A gun turret is also available on the game area. As long as a player stay on it, the gun turret will shoot automatically in the direction of the other player. Hence, players have to be 
+coordinated to know who takes the gun and to shoot in the good direction. (At the end, this turret will be usefull to detroy an aliens' protection that will randomly appear and put aliens 
+invicible against gun's laser). At this time, player on the turret is invicible but maybe we will change that.
 
