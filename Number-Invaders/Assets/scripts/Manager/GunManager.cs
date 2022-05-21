@@ -27,7 +27,7 @@ public class GunManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Player1Manager.current.gunHolded == gameObject || Player2Manager.current.gunHolded == gameObject){  // If one player is holding this gun
+        if (Player1Manager.current.weaponHolded == gameObject || Player2Manager.current.weaponHolded == gameObject){  // If one player is holding this gun
             gunHolded = true;                                                                                  // The gun is holded
         }
 

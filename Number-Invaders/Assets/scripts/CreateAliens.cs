@@ -11,7 +11,6 @@ public class CreateAliens : MonoBehaviour
 
     public GameObject prefabAlien;                  // The alien prefab we will use to create aliens 
 
-    public int aliensNumber;                        // Number of aliens that we want
     private int aliensIndex = 1;                    // Index of the alien we have to create 
 
 
@@ -31,7 +30,7 @@ public class CreateAliens : MonoBehaviour
     /* Calls CreateAlien() until we have enough aliens */
     public void CreateAliensGroup(){
 
-        while (aliensIndex <= aliensNumber){        // While we don't have created enough aliens
+        while (aliensIndex <= AlienManager.current.aliensNumber){        // While we don't have created enough aliens
 
             CreateAlien();                          // Create one alien
             aliensIndex +=1;                        // We go to the next alien        

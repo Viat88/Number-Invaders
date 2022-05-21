@@ -15,6 +15,7 @@ public class AlienManager : MonoBehaviour
     public bool hasCameInTheGameArea = false;
 
 
+    public int aliensNumber;                                            // Number of aliens that we want
     private Vector3 leftMissileDirection;                               // Missile on the left side when we look at aliens group
     private Vector3 rightMissileDirection;                              // Missile on the right side when we look at aliens group
     public int alienShootingNumber;
@@ -27,6 +28,9 @@ public class AlienManager : MonoBehaviour
     public int numberOfBomb;
     public float delayBetweenSuccessiveBombs;
     public float delayBetweenBombsSalvo;
+
+    public bool isInvincible = false;
+    private bool hasAlreadyBeenInvicible = false;
 
     
 
@@ -275,5 +279,21 @@ public class AlienManager : MonoBehaviour
 
     private void AlienBombShoot(){
         StartCoroutine(ShootBombsRoutine());
+    }
+
+////////////////////////////////////////////////////////////
+
+    private void CheckAliensNumber(){
+
+        if (alienList.Count <= aliensNumber/2 && hasAlreadyBeenInvicible){
+            MakeAliensInvicible();
+        }
+    }
+
+////////////////////////////////////////////////////////////
+
+    private void MakeAliensInvicible(){
+        hasAlreadyBeenInvicible = true;
+        isInvincible = true;
     }
 }

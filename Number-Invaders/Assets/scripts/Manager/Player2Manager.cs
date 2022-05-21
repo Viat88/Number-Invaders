@@ -5,9 +5,10 @@ using UnityEngine;
 public class Player2Manager : MonoBehaviour
 {
     public static Player2Manager current;                      // Unique Player2Manager
-    public bool onAGun = false;                                // to know if player is on a gun
-    public GameObject gunHolded;                                // the gun the player has
+    private GameObject weaponOn;
+    public GameObject weaponHolded;                            // the gun the player has
     public float timeToTakeGun;                                // time player has to be on a gun to take it
+    private float time;                                        
 
 
 
@@ -27,33 +28,50 @@ public class Player2Manager : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start(){}
+    void Start(){
+        time = timeToTakeGun;
+    }
 
     // Update is called once per frame
-    void Update(){}
+    void Update(){
+        TimeManager();
+        if (time<=0 && weaponOn != null){
+            TakeGun();
+        }
+    }
 
 ///////////////////////// TRIGGER FUNCTIONS ///////////////////////////////// 
 
     private void OnTriggerExit(Collider other){
         
         if (other.name == "Gun Turret"){
-            onAGun = false;
+            ChangeWeaponOn(null);
+            LetGun();
             GunTuretManager.current.NoPlayerHolding();
         }
     }
 
-
 ////////////////////////////////////////////////////////////
 
-    /* Coroutine to take the gun */
-    public IEnumerator TakeGunRoutine( GameObject gunToTake){
+    private void TimeManager(){
+
+        if (weaponOn != null){
+            time -= Time.deltaTime;
+        }
+    }
+
+    public void ChangeWeaponOn(GameObject newWeaponOn){
+
+        if (weaponOn != newWeaponOn){
+            InitialiseTime();
+            weaponOn = newWeaponOn;
+        }
         
-        yield return new WaitForSeconds(timeToTakeGun);                 // We wait the time needed to take a gun
-        if (onAGun){                                                    // If he's still on a gun
-            
-            LetGun();                                                   // We let the potential gun holded
-            TakeGun(gunToTake);                                         // We take the new gun
-        }                      
+    }
+
+
+    private void InitialiseTime(){
+        time = timeToTakeGun;
     }
 
 ////////////////////////////////////////////////////////////
@@ -61,22 +79,27 @@ public class Player2Manager : MonoBehaviour
     /* Let the gun player is holding */
     private void LetGun(){
 
-        if (gunHolded != null){                                      // If player already had a gun
-            gunHolded.transform.parent = null;                       // We let gun on the floor before taking the new one
+        if (weaponHolded != null){                                      // If player already had a gun
+            weaponHolded.transform.parent = null;                       // We let gun on the floor before taking the new one
         }
     }
 
 ////////////////////////////////////////////////////////////
 
     /* Gives the gun to the player */
-    private void TakeGun(GameObject gunToTake){ 
-        SoundManager.current.PlayGunHandlingSound();                    // We play the sound meaning the player has taken the gun
-        gunHolded = gunToTake;                                           // The gun holding by player is the one he was trying to take
-        if (gunToTake.name.Contains("Ray Gun")){
-            gunHolded.transform.parent = transform;                          // The gun is now a child of player
+    private void TakeGun(){ 
+        SoundManager.current.PlayGunHandlingSound();                     // We play the sound meaning the player has taken the gun
+
+        LetGun();                                                        // We let the potential gun holded
+        weaponHolded = weaponOn;                                         // The gun holding by player is the one he was trying to take
+        weaponOn = null;
+
+        if (weaponHolded.name.Contains("Ray Gun")){
+            weaponHolded.transform.parent = transform;                   // The gun is now a child of player
         }
 
-        if (gunToTake.name == "Gun Turret"){
+        if (weaponHolded.name == "Gun Turret"){
+            Debug.Log("ok2");
             GunTuretManager.current.PlayerHolding("Player2");
         }
     }

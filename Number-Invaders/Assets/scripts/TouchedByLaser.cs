@@ -32,10 +32,10 @@ public class TouchedByLaser : MonoBehaviour
 
         if (other.CompareTag("Laser")){
 
-            SoundManager.current.PlayAlienTouchedSound();
-            Debug.Log(other.gameObject.name);
+            SoundManager.current.PlayAlienTouchedSound();;
             int laserNumber = int.Parse(other.gameObject.name);
-            if ( number%laserNumber == 0){
+
+            if ( number%laserNumber == 0 && !AlienManager.current.isInvincible){
                 number = number/laserNumber;
                 alienText.text = number.ToString();
             }
