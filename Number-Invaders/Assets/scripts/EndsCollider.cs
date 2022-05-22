@@ -12,7 +12,7 @@ public class EndsCollider : MonoBehaviour
             alienNumber = 0;
 
             if (AlienManager.current.hasCameInTheGameArea){
-                AlienManager.current.NewTrajectory();                       // We whange the trajectory of alien's group
+                AlienManager.current.newTrajectory=true;                       // We whange the trajectory of alien's group
             }
             
             else{

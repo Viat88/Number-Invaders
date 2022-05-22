@@ -6,6 +6,7 @@ public class Player1Manager : MonoBehaviour
 {
     public static Player1Manager current;                      // Unique Player1Manager
     private GameObject weaponOn;
+    [HideInInspector]
     public GameObject weaponHolded;                            // the gun the player has
     public float timeToTakeGun;                                // time player has to be on a gun to take it
     private float time;
@@ -101,7 +102,6 @@ public class Player1Manager : MonoBehaviour
         }
         
         if (weaponHolded.name == "Gun Turret"){
-            Debug.Log("ok1");
             GunTuretManager.current.PlayerHolding("Player1");
         }
     }
