@@ -46,7 +46,9 @@ public class Player1Manager : MonoBehaviour
         
         if (other.name == "Gun Turret"){
             ChangeWeaponOn(null);
-            LetGun();
+            if (weaponHolded.name == "Gun Turret"){
+                LetGun();
+            }
             GunTuretManager.current.NoPlayerHolding();
         }
     }

@@ -10,9 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3534588957750724890}
   - component: {fileID: 7148625930763384431}
+  - component: {fileID: 1475637312660249935}
+  - component: {fileID: 5433277089203615374}
   m_Layer: 0
   m_Name: Turet Missile1
-  m_TagString: Untagged
+  m_TagString: TurretMissile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,6 +48,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 40
   direction: {x: 0, y: 0, z: 1}
+--- !u!65 &1475637312660249935
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935273920003719178}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6856232, y: 1, z: 3.288494}
+  m_Center: {x: 0.020988464, y: 0, z: 0.06683159}
+--- !u!114 &5433277089203615374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935273920003719178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd44b1dc989a91c488c2e605dfcc982d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagFilter: Alien
 --- !u!1 &9015546896485873025
 GameObject:
   m_ObjectHideFlags: 0

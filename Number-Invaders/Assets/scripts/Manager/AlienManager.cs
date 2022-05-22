@@ -63,6 +63,11 @@ public class AlienManager : MonoBehaviour
         if (alienList.Count < alienShootingNumber){                                             // If there is less alien than alienShootingNumber
             alienShootingNumber = alienList.Count;                                              // We make just shoot all aliens
         }
+
+        if (!hasAlreadyBeenInvicible){
+            CheckAliensNumber();
+        }
+            
     }
 
 
@@ -285,7 +290,7 @@ public class AlienManager : MonoBehaviour
 
     private void CheckAliensNumber(){
 
-        if (alienList.Count <= aliensNumber/2 && hasAlreadyBeenInvicible){
+        if (alienList.Count <= aliensNumber/2){
             MakeAliensInvicible();
         }
     }

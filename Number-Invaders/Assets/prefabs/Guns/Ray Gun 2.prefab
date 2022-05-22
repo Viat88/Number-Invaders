@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7129505b219db4d8a776561e7bbfec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootSpeed: 400
+  shootSpeed: 300
   laserPrefab: {fileID: 3217008192465742602, guid: 8c9412d4bef044c4d8b883e3adadc827,
     type: 3}
   shootCoolDown: 2
