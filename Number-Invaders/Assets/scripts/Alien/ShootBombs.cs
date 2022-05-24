@@ -9,23 +9,37 @@ public class ShootBombs : MonoBehaviour
     public int numberOfBomb;
     public float delayBetweenSuccessiveBombs;
     public GameObject bombPrefab;
+    public bool canShoot = true;
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
 
     void Start()
     {
         StartCoroutine (ShootBombSalvoRoutine());
+        MainParameters.current.OnCanShootBombChanged += ChangeCanShoot;
+        canShoot = MainParameters.current.CanShootBomb;
     }
 
     void Update()
-    {
-        
+    {}
+
+
+////////////////////////////////////////////////////////////
+
+    private void ChangeCanShoot(bool b){
+        canShoot = b;
+        if (b){
+            StartCoroutine(ShootBombSalvoRoutine());
+        }
+        else{
+            StopCoroutine(ShootBombSalvoRoutine());
+        }
     }
 
 ////////////////////////////////////////////////////////////
 
     private IEnumerator ShootBombSalvoRoutine(){
-        while (AlienManager.current.canShoot){
+        while (canShoot){
             if (AlienManager.current.hasCameInTheGameArea){
                 AlienBombShoot();
             }

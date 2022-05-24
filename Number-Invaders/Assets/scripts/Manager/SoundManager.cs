@@ -20,6 +20,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip victorySound;                      // Sound when all aliens has been destroyed
     public AudioClip bombExplosionSound;                // Sound when a bomb exploses
     public AudioClip bombShootSound;                    // Sound when a bomb is shot
+    public AudioClip clickSound;                        // Sound when a box is checked
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
 
@@ -105,5 +106,9 @@ public class SoundManager : MonoBehaviour
 
     public void PlayBombShootSound(){
         PlaySound(bombShootSound);
+    }
+
+    public void PlayClickSound(){
+        PlaySound(clickSound);
     }
 }

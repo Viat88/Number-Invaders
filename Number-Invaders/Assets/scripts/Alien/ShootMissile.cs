@@ -8,27 +8,42 @@ public class ShootMissile : MonoBehaviour
     public float timeBetweenAlienShoot;
     public int alienShootingNumber;
     public GameObject missilePrefab;
+    public bool canShoot = true;
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
 
     void Start()
     {
         StartCoroutine (ShootMissileRoutine());
+        MainParameters.current.OnCanShootMissileChanged += ChangeCanShoot;
+        canShoot = MainParameters.current.CanShootMissile;
     }
 
     void Update()
     {
+        
         if (AlienManager.current.alienList.Count < alienShootingNumber){                                             // If there is less alien than alienShootingNumber
             alienShootingNumber = AlienManager.current.alienList.Count;                                              // We make just shoot all aliens
         }
+        
     }
-
 
 ////////////////////////////////////////////////////////////
 
+    private void ChangeCanShoot(bool b){
+        canShoot = b;
+        if (b){
+            StartCoroutine(ShootMissileRoutine());
+        }
+        else{
+            StopCoroutine(ShootMissileRoutine());
+        }
+    }
+
+////////////////////////////////////////////////////////////
     private IEnumerator ShootMissileRoutine() 
     {
-        while (AlienManager.current.canShoot) // 2
+        while (canShoot) // 2
         {   
             if (AlienManager.current.hasCameInTheGameArea){
                 AliensMissileShoot(); 

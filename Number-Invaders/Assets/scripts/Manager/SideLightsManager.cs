@@ -32,16 +32,19 @@ public class SideLightsManager : MonoBehaviour
     }
 
     void Start(){
-        
-        
-        
-        
+        AlienManager.current.OnHasCameInGameArea += DesactivateAll;
+    }
+
+    void Update(){
+        /*if (AlienManager.current.hasCameInTheGameArea){
+            DesactivateAll(true);
+        }*/
     }
 
 ////////////////////////////////////////////////////////////
 
     public void LineActivation(string side){
-        DesactivateAll();
+        DesactivateAll(true);
 
         if (side == "West"){
             westLineActivated = true;
@@ -64,11 +67,14 @@ public class SideLightsManager : MonoBehaviour
         } 
     }
 
-    private void DesactivateAll(){
-        westLineActivated = false;
-        eastLineActivated = false;
-        northLineActivated = false;
-        southLineActivated = false;
+    private void DesactivateAll(bool b){
+
+        if(b){
+            westLineActivated = false;
+            eastLineActivated = false;
+            northLineActivated = false;
+            southLineActivated = false;
+        }
     }
 
     public IEnumerator WestFlashCoroutine(){

@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 
 public class AlienManager : MonoBehaviour
 {
 
     public static AlienManager current;
-    public bool newTrajectory = false;
     public List<GameObject> alienList = new List<GameObject>();
-    [HideInInspector]
-    public bool hasCameInTheGameArea = false;
+    
+    
 
 
     public int aliensNumber;                                            // Number of aliens that we want
@@ -22,13 +22,48 @@ public class AlienManager : MonoBehaviour
     public Vector3 rightMissileDirection;                              // Missile on the right side when we look at aliens group
 
 
-    [HideInInspector]
-    public bool canShoot = true;
+    
 
     public bool isInvincible = false;
     private bool hasAlreadyBeenInvicible = false;
 
-    
+
+///////////////////////// Listeners ///////////////////////////////////    
+
+    public event Action<Boolean> OnNewTrajectory;
+    public void NewTrajectory(Boolean b){
+        OnNewTrajectory?.Invoke(b);
+    }
+
+    [SerializeField]
+    public Boolean newTrajectory = false;
+    public Boolean IsNewTrajectory{
+        get => newTrajectory;
+        set
+        {
+            newTrajectory = value;
+            NewTrajectory(newTrajectory); //Fire the event
+        }
+    }
+
+
+
+
+    public event Action<Boolean> OnHasCameInGameArea;
+    public void HasCameInGameArea(Boolean b){
+        OnHasCameInGameArea?.Invoke(b);
+    }
+
+    [SerializeField]
+    public Boolean hasCameInTheGameArea = false;
+    public Boolean HasCameInTheGameArea{
+        get => hasCameInTheGameArea;
+        set
+        {
+            hasCameInTheGameArea = value;
+            HasCameInGameArea(hasCameInTheGameArea); //Fire the event
+        }
+    }
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
   
@@ -45,7 +80,10 @@ public class AlienManager : MonoBehaviour
     }
 
     void Start()
-    {}
+    {   
+        MainParameters.current.OnAlienMoveChanged += CanAliensMove;
+        CanAliensMove(MainParameters.current.CanAlienMove);
+    }
 
     void Update()
     {
@@ -56,6 +94,16 @@ public class AlienManager : MonoBehaviour
 
 ////////////////////////////////////////////////////////////
 
+    private void CanAliensMove(bool b){
+        gameObject.GetComponent<Translate>().enabled = b;
+
+        if (!b){
+            gameObject.transform.position = new Vector3(50,0,20);
+            HasCameInTheGameArea = true;
+        }
+    }
+
+////////////////////////////////////////////////////////////
 
     public void ChangeAliensDirection(Vector3 newLeftMissileDirection, Vector3 newRightMissileDirection){
         leftMissileDirection = newLeftMissileDirection;

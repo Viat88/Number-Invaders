@@ -16,15 +16,12 @@ public class ChooseSide : MonoBehaviour
     void Start()
     {
         aliensGroup = AlienManager.current.gameObject;
-        NewTrajectory();
+        NewTrajectory(true);
+        AlienManager.current.OnNewTrajectory += NewTrajectory;
     }
 
     void Update()
-    {
-        if (AlienManager.current.newTrajectory){
-            NewTrajectory();
-        }
-    }
+    {}
 
 
 ////////////////////////////////////////////////////////////
@@ -114,13 +111,17 @@ public class ChooseSide : MonoBehaviour
 
 ////////////////////////////////////////////////////////////  
 
-    public void NewTrajectory(){
+    public void NewTrajectory(bool b){
 
-        AlienManager.current.hasCameInTheGameArea = false;
-        ChooseTheSide();
-        UpdateDirection();
-        UpdatePosition();
-        AlienManager.current.newTrajectory = false;
+        if (b){
+            AlienManager.current.hasCameInTheGameArea = false;
+            ChooseTheSide();
+            UpdateDirection();
+            UpdatePosition();
+            AlienManager.current.IsNewTrajectory = false;
+        }
+        
+        
     }
 
 ////////////////////////////////////////////////////////////

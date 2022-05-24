@@ -55,3 +55,4 @@ MonoBehaviour:
   victorySound: {fileID: 8300000, guid: e275e733889d5e24f8dc6e974dde7981, type: 3}
   bombExplosionSound: {fileID: 8300000, guid: b103f9d4e304eeb4291787b9d002dc35, type: 3}
   bombShootSound: {fileID: 8300000, guid: 2001b4063b462ac4484f8c01bb84f3d0, type: 3}
+  clickSound: {fileID: 8300000, guid: a6208d44f05fb8941a6639659c5c2ada, type: 3}
