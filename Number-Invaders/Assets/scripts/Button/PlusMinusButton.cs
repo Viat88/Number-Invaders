@@ -68,5 +68,17 @@ public class PlusMinusButton : MonoBehaviour
                 
             }
         }
+
+        if (parameter == "miniShootSpeed"){
+            if (isPlus){
+                MainParameters.current.MiniShootSpeed = MainParameters.current.MiniShootSpeed + step;
+            } 
+            else{
+                if (MainParameters.current.MiniShootSpeed - step >=50){
+                    MainParameters.current.MiniShootSpeed = MainParameters.current.MiniShootSpeed - step;
+                }
+                
+            }
+        }
     }
 }

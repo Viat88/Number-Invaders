@@ -14,7 +14,6 @@ public class MainParameters : MonoBehaviour
     canMove
 
     number of aliens
-    number of aliens shooting
 
     missileSpeed
 
@@ -90,6 +89,22 @@ public class MainParameters : MonoBehaviour
         {
             numberOfAliens = value;
             NumberOfAliensChanged(numberOfAliens); //Fire the event
+        }
+    }
+
+    public event Action<int> OnMiniShootSpeedChanged;
+    public void MiniShootSpeedChanged(int n){
+        OnMiniShootSpeedChanged?.Invoke(n);
+    }
+
+    [SerializeField]
+    public int miniShootSpeed=50;
+    public int MiniShootSpeed{
+        get => miniShootSpeed;
+        set
+        {
+            miniShootSpeed = value;
+            MiniShootSpeedChanged(miniShootSpeed); //Fire the event
         }
     }
 

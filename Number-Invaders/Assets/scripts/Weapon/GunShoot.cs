@@ -8,7 +8,7 @@ public class GunShoot : MonoBehaviour
     private Vector3 previousPosition;                      // The position of the Gun during the previous frame
     private Vector3 currentPosition;                       // The position of the Gun during the current frame
     private Vector3 firstPosition;                         // The first position where the gun had a speed higher than shootSpeed
-    public float shootSpeed;                               // Minimum speed of the gun to shoot
+    private float shootSpeed;                              // Minimum speed of the gun to shoot
     private bool isShooting = false;                       // Is true if the speed of the gun is steel higher than shootSpeed;
     private float currentSpeed;                            // Current gun's speed
     public GameObject laserPrefab;                         // Laser's prefab
@@ -27,6 +27,7 @@ public class GunShoot : MonoBehaviour
 ///////////////////////// START FUNCTIONS ///////////////////////////////////  
 
     void Start(){
+        shootSpeed = MainParameters.current.MiniShootSpeed;
         currentPosition = transform.position;              // We get the initial position of the gun
         laserNumber = int.Parse(gameObject.transform.GetChild(0).GetComponent<TextMesh>().text);
     }

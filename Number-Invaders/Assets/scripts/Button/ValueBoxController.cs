@@ -12,8 +12,7 @@ public class ValueBoxController : MonoBehaviour
     void Start()
     {
         int value = GetParameterValue();
-        ChangeValueText(value);
-        MainParameters.current.OnNumberOfAliensChanged += ChangeValueText;
+        ChangeValueText(value);       
     }
 
 ////////////////////////////////////////////////////////////
@@ -21,7 +20,13 @@ public class ValueBoxController : MonoBehaviour
     private int GetParameterValue(){
         
         if (parameter == "numberOfAliens"){
+            MainParameters.current.OnNumberOfAliensChanged += ChangeValueText;
             return MainParameters.current.NumberOfAliens;
+            
+        }
+        if (parameter == "miniShootSpeed"){
+            MainParameters.current.OnMiniShootSpeedChanged += ChangeValueText;
+            return MainParameters.current.MiniShootSpeed;
         }
         return -1;
     }
