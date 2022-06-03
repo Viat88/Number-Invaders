@@ -1,0 +1,1038 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.4f1 (becced5a802b) revision 12504301'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19044.1706; Version 2009; 64bit' Language: 'fr' Physical Memory: 8067 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2019.3.0f6\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Wyatt/IMT_Atlantique/TC/Cours/IHM/Number-Invaders/Number-Invaders
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59556
+Successfully changed project path to: C:/Wyatt/IMT_Atlantique/TC/Cours/IHM/Number-Invaders/Number-Invaders
+C:/Wyatt/IMT_Atlantique/TC/Cours/IHM/Number-Invaders/Number-Invaders
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 77.82 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.4f1 (becced5a802b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Wyatt/IMT_Atlantique/TC/Cours/IHM/Number-Invaders/Number-Invaders/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD FirePro (TM) W4190M (ID=0x6604)
+    Vendor:   
+    VRAM:     2028 MB
+    Driver:   27.20.20904.1004
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56732
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003601 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 51.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.755 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002900 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.203 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1461 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.3 MB.
+System memory in use after: 150.3 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 1905.
+Total: 3.427700 ms (FindLiveObjects: 0.392000 ms CreateObjectMapping: 0.417300 ms MarkObjects: 2.432300 ms  DeleteObjects: 0.183800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/scripts/Parameters/MainParameters.cs
+  artifactKey: Guid(9f33b09271f1e3244b49535704896b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/Parameters/MainParameters.cs using Guid(9f33b09271f1e3244b49535704896b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b379aea52bd6ed4eb8b82a7817e4402e') in 0.080623 seconds
+  Import took 0.086691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.932874 seconds.
+  path: Assets/scripts/Parameters/HideParametersWindow.cs
+  artifactKey: Guid(9b8257fd9763bfa44b240bf93a8d4d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/Parameters/HideParametersWindow.cs using Guid(9b8257fd9763bfa44b240bf93a8d4d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98635c42bdc7e9c1b90da032730855db') in 0.013577 seconds
+  Import took 0.020169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018086 seconds.
+  path: Assets/scripts/Parameters/HideParametersWindow.cs
+  artifactKey: Guid(9b8257fd9763bfa44b240bf93a8d4d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/Parameters/HideParametersWindow.cs using Guid(9b8257fd9763bfa44b240bf93a8d4d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98635c42bdc7e9c1b90da032730855db') in 0.007587 seconds
+  Import took 0.015055 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004842 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.336 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.6 MB.
+System memory in use after: 148.7 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 1906.
+Total: 3.684200 ms (FindLiveObjects: 0.244400 ms CreateObjectMapping: 0.069700 ms MarkObjects: 3.337200 ms  DeleteObjects: 0.029700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004284 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.297 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1434 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.6 MB.
+System memory in use after: 148.7 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 1907.
+Total: 2.442300 ms (FindLiveObjects: 0.246700 ms CreateObjectMapping: 0.072400 ms MarkObjects: 2.078700 ms  DeleteObjects: 0.041800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.361931 seconds.
+  path: Assets/prefabs/parameters menu/Parameters gear.prefab
+  artifactKey: Guid(2d19b5c68038b35498a831cb0c3b79f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/parameters menu/Parameters gear.prefab using Guid(2d19b5c68038b35498a831cb0c3b79f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de43c8f59a4621be141d0b6ceda5f4d9') in 0.207352 seconds
+  Import took 0.214151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.000465 seconds.
+  path: Assets/scripts/HoldWeapon.cs
+  artifactKey: Guid(eae29f377867f9541a6d2d641ff89458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/HoldWeapon.cs using Guid(eae29f377867f9541a6d2d641ff89458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1aaabddddbb0599aea15975d4221660') in 0.020254 seconds
+  Import took 0.030788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.165802 seconds.
+  path: Assets/scripts/General Scripts
+  artifactKey: Guid(88a76255a5d2b914c8cd76178686e0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/General Scripts using Guid(88a76255a5d2b914c8cd76178686e0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '996c66a06c1ed3e3e846089ea6430d02') in 0.024729 seconds
+  Import took 0.038373 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005731 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.438 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1434 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.7 MB.
+System memory in use after: 151.8 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1916.
+Total: 4.690800 ms (FindLiveObjects: 0.377400 ms CreateObjectMapping: 0.152800 ms MarkObjects: 4.123100 ms  DeleteObjects: 0.034700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003205 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.390 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1434 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.7 MB.
+System memory in use after: 151.8 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1918.
+Total: 2.410200 ms (FindLiveObjects: 0.269200 ms CreateObjectMapping: 0.112800 ms MarkObjects: 2.000400 ms  DeleteObjects: 0.025300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.246676 seconds.
+  path: Assets/scripts/EndsCollider.cs
+  artifactKey: Guid(ca0e796dca7b32a46a693f687ab21cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/EndsCollider.cs using Guid(ca0e796dca7b32a46a693f687ab21cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1a3b0d0f9015ea6ee08057d32f9415') in 0.017489 seconds
+  Import took 0.023961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.436139 seconds.
+  path: Assets/scripts/GunShoot.cs
+  artifactKey: Guid(dd7129505b219db4d8a776561e7bbfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/GunShoot.cs using Guid(dd7129505b219db4d8a776561e7bbfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '845db3b9e497162b4e79fd35b98da528') in 0.044696 seconds
+  Import took 0.054376 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003911 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.343 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1434 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.7 MB.
+System memory in use after: 151.8 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1920.
+Total: 2.653000 ms (FindLiveObjects: 0.263100 ms CreateObjectMapping: 0.070100 ms MarkObjects: 2.277800 ms  DeleteObjects: 0.040300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.544079 seconds.
+  path: Assets/scripts/Weapon
+  artifactKey: Guid(572739b8d9aef824ca5e3ad2056806ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/Weapon using Guid(572739b8d9aef824ca5e3ad2056806ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746c6742839bc9b9b05829aaa2a5c3e0') in 0.023425 seconds
+  Import took 0.036013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000785 seconds.
+  path: Assets/scripts/Weapon
+  artifactKey: Guid(572739b8d9aef824ca5e3ad2056806ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/Weapon using Guid(572739b8d9aef824ca5e3ad2056806ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746c6742839bc9b9b05829aaa2a5c3e0') in 0.006482 seconds
+  Import took 0.011562 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003328 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.421 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1434 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.7 MB.
+System memory in use after: 151.8 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1922.
+Total: 4.519200 ms (FindLiveObjects: 0.367500 ms CreateObjectMapping: 0.116800 ms MarkObjects: 3.990400 ms  DeleteObjects: 0.041600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002925 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.586 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1434 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.7 MB.
+System memory in use after: 151.8 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1924.
+Total: 3.597400 ms (FindLiveObjects: 0.211600 ms CreateObjectMapping: 0.095300 ms MarkObjects: 3.241900 ms  DeleteObjects: 0.046900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003486 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.326 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1434 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.7 MB.
+System memory in use after: 151.8 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1926.
+Total: 2.444900 ms (FindLiveObjects: 0.247200 ms CreateObjectMapping: 0.062700 ms MarkObjects: 2.087700 ms  DeleteObjects: 0.045800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003406 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.351 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1434 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.7 MB.
+System memory in use after: 151.9 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1928.
+Total: 2.329800 ms (FindLiveObjects: 0.190300 ms CreateObjectMapping: 0.075600 ms MarkObjects: 2.023000 ms  DeleteObjects: 0.039000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006055 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.241 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1434 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.8 MB.
+System memory in use after: 151.9 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1930.
+Total: 2.965800 ms (FindLiveObjects: 0.403100 ms CreateObjectMapping: 0.160700 ms MarkObjects: 2.366600 ms  DeleteObjects: 0.033200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 236.996330 seconds.
+  path: Assets/prefabs/Buttons/AliensMoveButton.prefab
+  artifactKey: Guid(5b17710af3d3bfc459bbb591c3783fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/AliensMoveButton.prefab using Guid(5b17710af3d3bfc459bbb591c3783fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39a46e0d8fa885c41450e77ca95a6b62') in 0.116708 seconds
+  Import took 0.120976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/prefabs/Buttons/ShootBombButton.prefab
+  artifactKey: Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/ShootBombButton.prefab using Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877b9bb2b339f002674e472d5922f934') in 0.035031 seconds
+  Import took 0.041122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/prefabs/Buttons/ShootMissileButton.prefab
+  artifactKey: Guid(687a0fe99df83454bb70f7bf7c5de838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/ShootMissileButton.prefab using Guid(687a0fe99df83454bb70f7bf7c5de838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a9a5a70227b9543765dba77f8dd6026') in 0.039200 seconds
+  Import took 0.047255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.139523 seconds.
+  path: Assets/prefabs/Buttons/Check Button/Check Button.prefab
+  artifactKey: Guid(93628990b08b2ad43a588f5403a5b5c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/Check Button.prefab using Guid(93628990b08b2ad43a588f5403a5b5c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b58b200060ace25b7b8d421fd3030c') in 0.029823 seconds
+  Import took 0.036104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 119.177874 seconds.
+  path: Assets/Materials/Materials/New Material.mat
+  artifactKey: Guid(73564d79233c84549894406c71bd3d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/New Material.mat using Guid(73564d79233c84549894406c71bd3d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7bba59197857cdadbcdb263fc2b2705') in 0.101637 seconds
+  Import took 0.108893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 109.057005 seconds.
+  path: Assets/prefabs/Buttons/Plus
+  artifactKey: Guid(0c07a40f573cf964e9c72f3f9660e605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus using Guid(0c07a40f573cf964e9c72f3f9660e605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4d211b6a2f34a0f312b4b8dd68a6900') in 0.016137 seconds
+  Import took 0.021616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.327095 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus
+  artifactKey: Guid(0c07a40f573cf964e9c72f3f9660e605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus using Guid(0c07a40f573cf964e9c72f3f9660e605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b437b9017a5bfd902991a21a3388684b') in 0.016841 seconds
+  Import took 0.028175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.492334 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Symbol.prefab
+  artifactKey: Guid(df81f391b7f552e41a1f43cf1fe06ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Symbol.prefab using Guid(df81f391b7f552e41a1f43cf1fe06ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48a9053aa15d26249e71f8754a25ec74') in 0.038448 seconds
+  Import took 0.045275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.971697 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Minus Symbol.prefab
+  artifactKey: Guid(02a15672d2e37d44eaa1eb23578b2504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Minus Symbol.prefab using Guid(02a15672d2e37d44eaa1eb23578b2504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a87916ac0903c6d5a7543052fca73fd4') in 0.069733 seconds
+  Import took 0.079023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 78.488270 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Box.prefab
+  artifactKey: Guid(097f7b834cc0500479252e032d125e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Box.prefab using Guid(097f7b834cc0500479252e032d125e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a82c29bf43e5adafb8989177e0c0ffe') in 0.041860 seconds
+  Import took 0.047315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.671828 seconds.
+  path: Assets/prefabs/Buttons/Check Button/Minus Box.prefab
+  artifactKey: Guid(58e240e0d103bd84eaeb2d158f35d938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/Minus Box.prefab using Guid(58e240e0d103bd84eaeb2d158f35d938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c625a8c661ff0493635d55e45b3ad21') in 0.043849 seconds
+  Import took 0.049308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 323.356461 seconds.
+  path: Assets/prefabs/Buttons/AliensMoveButton.prefab
+  artifactKey: Guid(5b17710af3d3bfc459bbb591c3783fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/AliensMoveButton.prefab using Guid(5b17710af3d3bfc459bbb591c3783fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3daf74e67a5cfabbca57c7279912575') in 0.035133 seconds
+  Import took 0.042262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/prefabs/Buttons/ShootBombButton.prefab
+  artifactKey: Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/ShootBombButton.prefab using Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc14d22e9ebeccf29e693905eb5c600d') in 0.029180 seconds
+  Import took 0.037265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/prefabs/Buttons/Menu Button.prefab
+  artifactKey: Guid(9b4128a50f16f71409304938c3e08316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Menu Button.prefab using Guid(9b4128a50f16f71409304938c3e08316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b99eac0b39f3dfe799cda9b5d515965') in 0.043413 seconds
+  Import took 0.050921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000603 seconds.
+  path: Assets/prefabs/Buttons/ShootMissileButton.prefab
+  artifactKey: Guid(687a0fe99df83454bb70f7bf7c5de838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/ShootMissileButton.prefab using Guid(687a0fe99df83454bb70f7bf7c5de838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92567a5dfd68903259b72c5820be9775') in 0.024803 seconds
+  Import took 0.033512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000908 seconds.
+  path: Assets/prefabs/Buttons/Menu Button.prefab
+  artifactKey: Guid(9b4128a50f16f71409304938c3e08316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Menu Button.prefab using Guid(9b4128a50f16f71409304938c3e08316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b99eac0b39f3dfe799cda9b5d515965') in 0.021912 seconds
+  Import took 0.027471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.142754 seconds.
+  path: Assets/prefabs/Buttons/Button.prefab
+  artifactKey: Guid(f44c291f94975ad47928ba4787628329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Button.prefab using Guid(f44c291f94975ad47928ba4787628329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f38c87ed6fe6d55c28f86bee80d668') in 0.032451 seconds
+  Import took 0.040165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.893527 seconds.
+  path: Assets/prefabs/Buttons/Parameter Button.prefab
+  artifactKey: Guid(f44c291f94975ad47928ba4787628329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Parameter Button.prefab using Guid(f44c291f94975ad47928ba4787628329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7269b6e6227180b97c9a03c218a07f') in 0.046035 seconds
+  Import took 0.054882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.157779 seconds.
+  path: Assets/prefabs/Buttons/Check Button/AliensMoveButton.prefab
+  artifactKey: Guid(5b17710af3d3bfc459bbb591c3783fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/AliensMoveButton.prefab using Guid(5b17710af3d3bfc459bbb591c3783fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c5c45f903b2469764810976d06d9141') in 0.032883 seconds
+  Import took 0.042439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.810783 seconds.
+  path: Assets/prefabs/Buttons/Check Button/AliensMoveButton.prefab
+  artifactKey: Guid(5b17710af3d3bfc459bbb591c3783fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/AliensMoveButton.prefab using Guid(5b17710af3d3bfc459bbb591c3783fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f5cb5039c772be058488b87ad87c19f') in 0.037558 seconds
+  Import took 0.046683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 131.838006 seconds.
+  path: Assets/prefabs/Buttons/Check Button/AliensMoveButton.prefab
+  artifactKey: Guid(5b17710af3d3bfc459bbb591c3783fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/AliensMoveButton.prefab using Guid(5b17710af3d3bfc459bbb591c3783fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '946028354798e658881d313075888112') in 0.026874 seconds
+  Import took 0.031880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.935052 seconds.
+  path: Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab
+  artifactKey: Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab using Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21703e01735276be047bee31689dcabe') in 0.026519 seconds
+  Import took 0.030710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.701986 seconds.
+  path: Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab
+  artifactKey: Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab using Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b5a96723867957015933b2718018d34') in 0.036971 seconds
+  Import took 0.045772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.975710 seconds.
+  path: Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab
+  artifactKey: Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab using Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '414105a35d0c5ae41331642b7c56c6c8') in 0.040231 seconds
+  Import took 0.047613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.973648 seconds.
+  path: Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab
+  artifactKey: Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab using Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a05542877421863ae0d831410e4b7dac') in 0.040766 seconds
+  Import took 0.049234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.026247 seconds.
+  path: Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab
+  artifactKey: Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab using Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89381b5fcb69cd8ca8b4afc25c6f2f0c') in 0.045734 seconds
+  Import took 0.057073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.330926 seconds.
+  path: Assets/prefabs/Buttons/Parameter Button.prefab
+  artifactKey: Guid(f44c291f94975ad47928ba4787628329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Parameter Button.prefab using Guid(f44c291f94975ad47928ba4787628329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e9c14d5331f2aba3c95d50f5e00dd3') in 0.027099 seconds
+  Import took 0.033628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.435014 seconds.
+  path: Assets/prefabs/Buttons/Parameter Button.prefab
+  artifactKey: Guid(f44c291f94975ad47928ba4787628329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Parameter Button.prefab using Guid(f44c291f94975ad47928ba4787628329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d8e4c50ecd1980048c4d434dae4edb2') in 0.042863 seconds
+  Import took 0.048122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.174340 seconds.
+  path: Assets/prefabs/Buttons/Check Button/AliensMoveButton.prefab
+  artifactKey: Guid(5b17710af3d3bfc459bbb591c3783fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/AliensMoveButton.prefab using Guid(5b17710af3d3bfc459bbb591c3783fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e61a95887b90c9dda69f15240ba8587a') in 0.017432 seconds
+  Import took 0.025787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab
+  artifactKey: Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab using Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4db43cc86d4c305e4619e8e21ad2dd4') in 0.021783 seconds
+  Import took 0.027842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.062966 seconds.
+  path: Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab
+  artifactKey: Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab using Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff5c0fff48d23b0d770cc349a36ce8ad') in 0.030596 seconds
+  Import took 0.039266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 170.492774 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(c4a19d23ab2e3c040b75075642be91eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(c4a19d23ab2e3c040b75075642be91eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5bbe4645ed5fd734b48018583607051') in 0.046918 seconds
+  Import took 0.055504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001905 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(c4a19d23ab2e3c040b75075642be91eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(c4a19d23ab2e3c040b75075642be91eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5bbe4645ed5fd734b48018583607051') in 0.037062 seconds
+  Import took 0.041293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 121.141995 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter 1.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter 1.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b06de305ec239afcea44c06e6fef673') in 0.041065 seconds
+  Import took 0.047385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.909998 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa884a1353ce0acc9c0fda25f5b2b4c') in 0.042125 seconds
+  Import took 0.049259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.541524 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bc4a71d4d87f48111b5ef6e0bf39cc5') in 0.034687 seconds
+  Import took 0.046093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.174953 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b0bc8b30ddd30feea91449272b5fe89') in 0.055786 seconds
+  Import took 0.062657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 82.797417 seconds.
+  path: Assets/scripts/Button/PlusMinusButton.cs
+  artifactKey: Guid(4f467aad8908e6f42af8f842e0f5948f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/Button/PlusMinusButton.cs using Guid(4f467aad8908e6f42af8f842e0f5948f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec48434edbe6cf40cf55335d70eeea4d') in 0.022841 seconds
+  Import took 0.040766 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003997 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.720 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.2 MB.
+System memory in use after: 152.3 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1968.
+Total: 2.879200 ms (FindLiveObjects: 0.426900 ms CreateObjectMapping: 0.236400 ms MarkObjects: 2.172000 ms  DeleteObjects: 0.041300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002951 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.456 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.2 MB.
+System memory in use after: 152.4 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1970.
+Total: 2.918000 ms (FindLiveObjects: 0.398700 ms CreateObjectMapping: 0.184300 ms MarkObjects: 2.291200 ms  DeleteObjects: 0.039600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 530.091989 seconds.
+  path: Assets/scripts/Button/PlusMinusButton.cs
+  artifactKey: Guid(4f467aad8908e6f42af8f842e0f5948f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/Button/PlusMinusButton.cs using Guid(4f467aad8908e6f42af8f842e0f5948f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87a1dde0669a7671835fd79bcaea19b3') in 0.030508 seconds
+  Import took 0.034300 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002961 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.686 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.3 MB.
+System memory in use after: 152.4 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1972.
+Total: 3.184800 ms (FindLiveObjects: 0.407800 ms CreateObjectMapping: 0.105300 ms MarkObjects: 2.627900 ms  DeleteObjects: 0.040500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 13274.827414 seconds.
+  path: Assets/Scenes/Parameters.unity
+  artifactKey: Guid(1862054180d915c43b98b6e81b5882db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Parameters.unity using Guid(1862054180d915c43b98b6e81b5882db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda7e3b84d2389bd7cc8b4727703ccb4') in 0.135811 seconds
+  Import took 0.241617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.116980 seconds.
+  path: Assets/prefabs/Buttons/Check Button/AliensMoveButton.prefab
+  artifactKey: Guid(5b17710af3d3bfc459bbb591c3783fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/AliensMoveButton.prefab using Guid(5b17710af3d3bfc459bbb591c3783fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e82c5a37076bba97e6a87f23cbd60d7a') in 0.171081 seconds
+  Import took 0.176000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab
+  artifactKey: Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/ShootBombButton.prefab using Guid(bafd610b23437224696f04957f247918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad61225aeed63dd63500e754ea013878') in 0.031266 seconds
+  Import took 0.038360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000430 seconds.
+  path: Assets/prefabs/Buttons/Check Button/ShootMissileButton.prefab
+  artifactKey: Guid(687a0fe99df83454bb70f7bf7c5de838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Check Button/ShootMissileButton.prefab using Guid(687a0fe99df83454bb70f7bf7c5de838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62444d78f2fc00986d359f2e5345efd4') in 0.044760 seconds
+  Import took 0.055322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 336.122529 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Value Box.prefab
+  artifactKey: Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Value Box.prefab using Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6892eedb43e402dd273a60d0d52edf40') in 0.078481 seconds
+  Import took 0.086525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.174076 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b4bcb0a67ffe9e9aa82b5b40202c56e') in 0.062361 seconds
+  Import took 0.068248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.332943 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91c0c4f9b51c29aa017034f3521c0121') in 0.078667 seconds
+  Import took 0.089460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.356329 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a047a284464ca3580fa24cfd8124cf8f') in 0.038804 seconds
+  Import took 0.049676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.399920 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6499b34935d9b31e7e97a2962ec2a61') in 0.056087 seconds
+  Import took 0.068961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.405129 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378f5d17e1cb2e1ab1882bb06be778bf') in 0.065171 seconds
+  Import took 0.083254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.789873 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b706f8d993cc69d832d8beeb0cbcef6') in 0.071291 seconds
+  Import took 0.080269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 72.321850 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f292f1e4131c14729edf66196bbb36db') in 0.064147 seconds
+  Import took 0.072786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Value Box.prefab
+  artifactKey: Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Value Box.prefab using Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '404824e0e973589c1ef102ba356d7093') in 0.034548 seconds
+  Import took 0.040757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.698985 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2218952cfe9651c9fbaa3dcb9c103462') in 0.041624 seconds
+  Import took 0.051193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Value Box.prefab
+  artifactKey: Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Value Box.prefab using Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f1017fac10e6b6092a6c70137d9f7be') in 0.026939 seconds
+  Import took 0.033756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.422542 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f16c84a9c51ee81e3ce02e0ed41515') in 0.040359 seconds
+  Import took 0.050646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Value Box.prefab
+  artifactKey: Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Value Box.prefab using Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3a37bb17fb0346e998b541a8aad1b2c') in 0.036367 seconds
+  Import took 0.043234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.857054 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '497b9fbbbb370c9b217dc1dc42b26616') in 0.043270 seconds
+  Import took 0.049516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Value Box.prefab
+  artifactKey: Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Value Box.prefab using Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8495d760cbcd1006aa36505730cad3e5') in 0.039826 seconds
+  Import took 0.044372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.421091 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2d76bc1a50af36fc6a5d82271030ef') in 0.053296 seconds
+  Import took 0.060678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Value Box.prefab
+  artifactKey: Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Value Box.prefab using Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e5c24eecc35d7037724e9eae48d61e') in 0.037921 seconds
+  Import took 0.048155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.172538 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf5e3d1bdb195f89289574a60fd50ba5') in 0.044366 seconds
+  Import took 0.058384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Value Box.prefab
+  artifactKey: Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Value Box.prefab using Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0781051c5e845b7987766b1d089f5a1f') in 0.069224 seconds
+  Import took 0.075858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.728289 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3694c97ee25fb86b493f8f8a8156b70a') in 0.053898 seconds
+  Import took 0.060929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Value Box.prefab
+  artifactKey: Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Value Box.prefab using Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee5727ec29843f6421656f197faaa46c') in 0.041385 seconds
+  Import took 0.051083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.756505 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3ef977e27c688b08e16b4f38c33c315') in 0.046643 seconds
+  Import took 0.061709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Value Box.prefab
+  artifactKey: Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Value Box.prefab using Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05f1d46d475c345bb0949d08adbbfdaf') in 0.023572 seconds
+  Import took 0.032929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.865833 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e3d625753094bb033801481aa34e9ca') in 0.040294 seconds
+  Import took 0.047518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.473923 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de291e5fa9a32829be97ad4540124320') in 0.053028 seconds
+  Import took 0.060483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.622422 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57318472b96f23b657f6263a6b84344a') in 0.099433 seconds
+  Import took 0.109959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.704218 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3b3c22c833e7785359912ed8092f70a') in 0.118408 seconds
+  Import took 0.129253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000440 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Value Box.prefab
+  artifactKey: Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Value Box.prefab using Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e58d9a0a3ca7f45c2ef31417b95d30') in 0.034544 seconds
+  Import took 0.043061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.129912 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab
+  artifactKey: Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Plus Minus Parameter.prefab using Guid(568a2be486e339444ae227bde5f331ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3808f2270728bf4b8c09e86dd70286eb') in 0.032548 seconds
+  Import took 0.044045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/prefabs/Buttons/Plus Minus/Value Box.prefab
+  artifactKey: Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Buttons/Plus Minus/Value Box.prefab using Guid(eedb2951eb1f8e44295c9fceebb84b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5271672c375ce6998eae284aee36d812') in 0.023329 seconds
+  Import took 0.029461 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

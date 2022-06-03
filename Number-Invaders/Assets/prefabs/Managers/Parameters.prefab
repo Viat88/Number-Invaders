@@ -44,7 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f33b09271f1e3244b49535704896b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeToChooseButton: 2
   canShootMissile: 1
+  canShootBomb: 1
+  canAlienMove: 1
+  numberOfAliens: 4
 --- !u!114 &7170269393057359567
 MonoBehaviour:
   m_ObjectHideFlags: 0

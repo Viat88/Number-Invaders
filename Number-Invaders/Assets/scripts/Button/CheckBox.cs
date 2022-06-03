@@ -27,7 +27,6 @@ public class CheckBox : MonoBehaviour
         time -= Time.deltaTime;
         if (time <=0 && onButton && !alreadyDone) {
             ChangeParameter();
-            alreadyDone = true;
         }
     }
 
@@ -38,6 +37,7 @@ public class CheckBox : MonoBehaviour
         if (other.CompareTag("Player1") || other.CompareTag("Player2")){
             onButton = true;
             time = timeToChooseButton;
+            
         }
     }
 
@@ -80,6 +80,7 @@ public class CheckBox : MonoBehaviour
 ////////////////////////////////////////////////////////////
 
     private void ChangeParameter(){
+        alreadyDone = true;
         SoundManager.current.PlayClickSound();
         isChecked = !isChecked;
         checkObject.SetActive(isChecked);

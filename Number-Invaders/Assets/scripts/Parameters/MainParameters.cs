@@ -6,6 +6,7 @@ using System;
 public class MainParameters : MonoBehaviour
 {
     public static MainParameters current;
+    public float timeToChooseButton;
 
     /*
     canShootMissile
@@ -72,6 +73,23 @@ public class MainParameters : MonoBehaviour
         {
             canAlienMove = value;
             AlienMoveChanged(canAlienMove); //Fire the event
+        }
+    }
+
+
+    public event Action<int> OnNumberOfAliensChanged;
+    public void NumberOfAliensChanged(int n){
+        OnNumberOfAliensChanged?.Invoke(n);
+    }
+
+    [SerializeField]
+    public int numberOfAliens=4;
+    public int NumberOfAliens{
+        get => numberOfAliens;
+        set
+        {
+            numberOfAliens = value;
+            NumberOfAliensChanged(numberOfAliens); //Fire the event
         }
     }
 

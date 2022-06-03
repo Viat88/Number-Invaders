@@ -77,7 +77,7 @@ public class Player2Manager : MonoBehaviour
 ////////////////////////////////////////////////////////////
 
     /* Let the gun player is holding */
-    private void LetGun(){
+    public void LetGun(){
 
         if (weaponHolded != null){                                      // If player already had a gun
             weaponHolded.transform.parent = null;                       // We let gun on the floor before taking the new one

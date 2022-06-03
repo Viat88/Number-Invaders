@@ -13,6 +13,7 @@ public class AlienManager : MonoBehaviour
     
 
 
+    //[HideInInspector]
     public int aliensNumber;                                            // Number of aliens that we want
 
     [HideInInspector]
@@ -77,6 +78,8 @@ public class AlienManager : MonoBehaviour
         {
             Destroy(obj: this);
         }
+
+        aliensNumber = MainParameters.current.NumberOfAliens;
     }
 
     void Start()

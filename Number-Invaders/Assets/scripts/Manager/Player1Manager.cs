@@ -7,7 +7,7 @@ public class Player1Manager : MonoBehaviour
     public static Player1Manager current;                      // Unique Player1Manager
     private GameObject weaponOn;
     [HideInInspector]
-    public GameObject weaponHolded;                            // the gun the player has
+    public GameObject weaponHolded=null;                            // the gun the player has
     public float timeToTakeGun;                                // time player has to be on a gun to take it
     private float time;
 
@@ -80,7 +80,7 @@ public class Player1Manager : MonoBehaviour
 ////////////////////////////////////////////////////////////
 
     /* Let the gun player is holding */
-    private void LetGun(){
+    public void LetGun(){
 
         if (weaponHolded != null){                                      // If player already had a gun
             weaponHolded.transform.parent = null;                       // We let gun on the floor before taking the new one

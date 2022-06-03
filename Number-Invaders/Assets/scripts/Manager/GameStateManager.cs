@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameStateManager : MonoBehaviour
 {
@@ -15,6 +16,25 @@ public class GameStateManager : MonoBehaviour
     public GameObject heart3;
 
     private int numberOfLifes = 3;                                                   // Number of lifes that players have
+    
+    
+///////////////////////// LISTENERS /////////////////////////////////// 
+
+    public event Action<Boolean> OnIsPausedChanged;
+    public void IsPausedChanged(Boolean b){
+        OnIsPausedChanged?.Invoke(b);
+    }
+
+    [SerializeField]
+    private Boolean isPaused = false;
+    public Boolean IsPaused{
+        get => isPaused;
+        set
+        {
+            isPaused = value;
+            IsPausedChanged(isPaused); //Fire the event
+        }
+    }
 
 
 

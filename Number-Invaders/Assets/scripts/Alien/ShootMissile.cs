@@ -43,7 +43,7 @@ public class ShootMissile : MonoBehaviour
 ////////////////////////////////////////////////////////////
     private IEnumerator ShootMissileRoutine() 
     {
-        while (canShoot) // 2
+        while (canShoot)
         {   
             if (AlienManager.current.hasCameInTheGameArea){
                 AliensMissileShoot(); 
