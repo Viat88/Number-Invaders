@@ -62,7 +62,7 @@ public class PlusMinusButton : MonoBehaviour
                 MainParameters.current.NumberOfAliens = MainParameters.current.NumberOfAliens + step;
             } 
             else{
-                if (MainParameters.current.NumberOfAliens - step >= 0){
+                if (MainParameters.current.NumberOfAliens - step >=1){
                     MainParameters.current.NumberOfAliens = MainParameters.current.NumberOfAliens - step;
                 }
                 
