@@ -8,19 +8,6 @@ public class MainParameters : MonoBehaviour
     public static MainParameters current;
     public float timeToChooseButton;
 
-    /*
-    canShootMissile
-    canShootBomb
-    canMove
-
-    number of aliens
-
-    missileSpeed
-
-    minimumSpeedShoot
-
-    */
-
 
 ///////////////////////// LISTENERS /////////////////////////////////// 
 
@@ -92,6 +79,26 @@ public class MainParameters : MonoBehaviour
         }
     }
 
+
+
+    public event Action<int> OnSumFactorChanged;
+    public void SumFactorChanged(int n){
+        OnSumFactorChanged?.Invoke(n);
+    }
+
+    [SerializeField]
+    public int sumFactor=7;
+    public int SumFactor{
+        get => sumFactor;
+        set
+        {
+            sumFactor = value;
+            SumFactorChanged(sumFactor); //Fire the event
+        }
+    }
+
+
+
     public event Action<int> OnMiniShootSpeedChanged;
     public void MiniShootSpeedChanged(int n){
         OnMiniShootSpeedChanged?.Invoke(n);
@@ -105,6 +112,23 @@ public class MainParameters : MonoBehaviour
         {
             miniShootSpeed = value;
             MiniShootSpeedChanged(miniShootSpeed); //Fire the event
+        }
+    }
+
+
+    public event Action<int> OnMiniShootLengthChanged;
+    public void MiniShootLengthChanged(int n){
+        OnMiniShootLengthChanged?.Invoke(n);
+    }
+
+    [SerializeField]
+    public int miniShootLength=5;
+    public int MiniShootLength{
+        get => miniShootLength;
+        set
+        {
+            miniShootLength = value;
+            MiniShootLengthChanged(miniShootLength); //Fire the event
         }
     }
 

@@ -49,7 +49,9 @@ MonoBehaviour:
   canShootBomb: 1
   canAlienMove: 1
   numberOfAliens: 4
+  sumFactor: 7
   miniShootSpeed: 50
+  miniShootLength: 5
 --- !u!114 &7170269393057359567
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -28,6 +28,16 @@ public class ValueBoxController : MonoBehaviour
             MainParameters.current.OnMiniShootSpeedChanged += ChangeValueText;
             return MainParameters.current.MiniShootSpeed;
         }
+
+        if (parameter == "sumFactor"){
+            MainParameters.current.OnSumFactorChanged += ChangeValueText;
+            return MainParameters.current.SumFactor;
+        }
+
+        if (parameter == "miniShootLength"){
+            MainParameters.current.OnMiniShootLengthChanged += ChangeValueText;
+            return MainParameters.current.MiniShootLength;
+        }
         return -1;
     }
     

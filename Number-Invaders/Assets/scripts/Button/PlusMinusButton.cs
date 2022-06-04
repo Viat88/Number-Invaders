@@ -17,13 +17,13 @@ public class PlusMinusButton : MonoBehaviour
 
 ///////////////////////// START FUNCTIONS /////////////////////////////////// 
 
-    // Start is called before the first frame update
+
     void Start()
     {
         timeToChooseButton = MainParameters.current.timeToChooseButton;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         time -= Time.deltaTime;
@@ -76,6 +76,30 @@ public class PlusMinusButton : MonoBehaviour
             else{
                 if (MainParameters.current.MiniShootSpeed - step >=50){
                     MainParameters.current.MiniShootSpeed = MainParameters.current.MiniShootSpeed - step;
+                }
+                
+            }
+        }
+
+        if (parameter == "sumFactor"){
+            if (isPlus){
+                MainParameters.current.SumFactor = MainParameters.current.SumFactor + step;
+            } 
+            else{
+                if (MainParameters.current.SumFactor - step >=1){
+                    MainParameters.current.SumFactor = MainParameters.current.SumFactor - step;
+                }
+                
+            }
+        }
+
+        if (parameter == "miniShootLength"){
+            if (isPlus){
+                MainParameters.current.MiniShootLength = MainParameters.current.MiniShootLength + step;
+            } 
+            else{
+                if (MainParameters.current.MiniShootLength - step >=1){
+                    MainParameters.current.MiniShootLength = MainParameters.current.MiniShootLength - step;
                 }
                 
             }

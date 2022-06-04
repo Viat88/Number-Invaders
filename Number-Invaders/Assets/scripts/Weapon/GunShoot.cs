@@ -8,6 +8,8 @@ public class GunShoot : MonoBehaviour
     private Vector3 previousPosition;                      // The position of the Gun during the previous frame
     private Vector3 currentPosition;                       // The position of the Gun during the current frame
     private Vector3 firstPosition;                         // The first position where the gun had a speed higher than shootSpeed
+
+
     private float shootSpeed;                              // Minimum speed of the gun to shoot
     private bool isShooting = false;                       // Is true if the speed of the gun is steel higher than shootSpeed;
     private float currentSpeed;                            // Current gun's speed
@@ -15,7 +17,7 @@ public class GunShoot : MonoBehaviour
     private Vector3 direction;                             // The direction the laser has to follow
     public float shootCoolDown;                            // Time between 2 succesives player's shot
     private float shootTimer;                              // Time before player can shoot (value decrease throughout the time)
-    public float minimumLengthShot;                        // The minimum length of the shot movement that player has to do
+    private float minimumLengthShot;                        // The minimum length of the shot movement that player has to do
     private bool firstTime = false;                        // Tells if the first time (since player shot) that shootTimer is lower than 0
     private int laserNumber;
 
@@ -28,6 +30,7 @@ public class GunShoot : MonoBehaviour
 
     void Start(){
         shootSpeed = MainParameters.current.MiniShootSpeed;
+        minimumLengthShot = MainParameters.current.miniShootLength;
         currentPosition = transform.position;              // We get the initial position of the gun
         laserNumber = int.Parse(gameObject.transform.GetChild(0).GetComponent<TextMesh>().text);
     }
