@@ -9,7 +9,7 @@ public class CheckBox : MonoBehaviour
     private bool alreadyDone = false;
 
 
-    public float timeToChooseButton;
+    private float timeToChooseButton;
     private bool isChecked = true;
     private bool onButton = false;
     private float time;
@@ -18,6 +18,7 @@ public class CheckBox : MonoBehaviour
 
     void Start()
     {
+        timeToChooseButton = MainParameters.current.timeToChooseButton;
         CheckIfChecked();
         time = timeToChooseButton;
     }
