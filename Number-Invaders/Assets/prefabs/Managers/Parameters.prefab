@@ -48,10 +48,12 @@ MonoBehaviour:
   canShootMissile: 1
   canShootBomb: 1
   canAlienMove: 1
-  numberOfAliens: 4
+  numberOfAliens: 5
   sumFactor: 7
+  maxOfAliensNumber: 100
   miniShootSpeed: 50
   miniShootLength: 5
+  listGunAvailable: 020000000300000005000000
 --- !u!114 &7170269393057359567
 MonoBehaviour:
   m_ObjectHideFlags: 0

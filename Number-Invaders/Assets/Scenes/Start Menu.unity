@@ -340,18 +340,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e81ecbb14bf44e6438a94b971d02fc7a, type: 3}
---- !u!1001 &1894801568
+--- !u!1001 &2071946181
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 519403182415866052, guid: 18b46115673376443aa210148b2bbd57,
-        type: 3}
-      propertyPath: timeToChooseButton
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 519403182415866054, guid: 18b46115673376443aa210148b2bbd57,
         type: 3}
       propertyPath: m_Name
@@ -365,17 +360,17 @@ PrefabInstance:
     - target: {fileID: 519403182415866055, guid: 18b46115673376443aa210148b2bbd57,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 92.776306
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 519403182415866055, guid: 18b46115673376443aa210148b2bbd57,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0286827
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 519403182415866055, guid: 18b46115673376443aa210148b2bbd57,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 42.10279
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 519403182415866055, guid: 18b46115673376443aa210148b2bbd57,
         type: 3}

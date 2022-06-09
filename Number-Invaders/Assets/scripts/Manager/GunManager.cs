@@ -22,6 +22,7 @@ public class GunManager : MonoBehaviour
     void Start()
     {
         initialPosition = transform.position;
+        gunText.GetComponent<TextMesh>().text = gameObject.name;
     }
 
     // Update is called once per frame

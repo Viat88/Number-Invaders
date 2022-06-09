@@ -38,6 +38,13 @@ public class ValueBoxController : MonoBehaviour
             MainParameters.current.OnMiniShootLengthChanged += ChangeValueText;
             return MainParameters.current.MiniShootLength;
         }
+
+        if (parameter == "maxAlienNumber"){
+            MainParameters.current.OnMaxOfAliensNumberChanged += ChangeValueText;
+            return MainParameters.current.MaxOfAliensNumber;
+        }
+
+        
         return -1;
     }
     

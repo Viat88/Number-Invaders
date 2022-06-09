@@ -147,7 +147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alienText: {fileID: 6520143934409677518}
-  sommePower: 5
 --- !u!114 &7170842060440569355
 MonoBehaviour:
   m_ObjectHideFlags: 0

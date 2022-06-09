@@ -69,7 +69,7 @@ public class MainParameters : MonoBehaviour
     }
 
     [SerializeField]
-    public int numberOfAliens=4;
+    public int numberOfAliens;
     public int NumberOfAliens{
         get => numberOfAliens;
         set
@@ -87,13 +87,29 @@ public class MainParameters : MonoBehaviour
     }
 
     [SerializeField]
-    public int sumFactor=7;
+    public int sumFactor;
     public int SumFactor{
         get => sumFactor;
         set
         {
             sumFactor = value;
             SumFactorChanged(sumFactor); //Fire the event
+        }
+    }
+
+    public event Action<int> OnMaxOfAliensNumberChanged;
+    public void MaxOfAliensNumberChanged(int n){
+        OnMaxOfAliensNumberChanged?.Invoke(n);
+    }
+
+    [SerializeField]
+    public int maxOfAliensNumber;
+    public int MaxOfAliensNumber{
+        get => maxOfAliensNumber;
+        set
+        {
+            maxOfAliensNumber = value;
+            MaxOfAliensNumberChanged(maxOfAliensNumber); //Fire the event
         }
     }
 
@@ -129,6 +145,23 @@ public class MainParameters : MonoBehaviour
         {
             miniShootLength = value;
             MiniShootLengthChanged(miniShootLength); //Fire the event
+        }
+    }
+
+
+    public event Action<List<int>> OnGunAvailableChanged;
+    public void GunAvailableChanged(List<int> list){
+        OnGunAvailableChanged?.Invoke(list);
+    }
+
+    [SerializeField]
+    public List<int> listGunAvailable;
+    public List<int> ListGunAvailable{
+        get => listGunAvailable;
+        set
+        {
+            listGunAvailable = value;
+            GunAvailableChanged(listGunAvailable); //Fire the event
         }
     }
 

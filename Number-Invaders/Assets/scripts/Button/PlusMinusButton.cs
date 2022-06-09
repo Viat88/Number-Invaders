@@ -104,5 +104,17 @@ public class PlusMinusButton : MonoBehaviour
                 
             }
         }
+
+        if (parameter == "maxAlienNumber"){
+            if (isPlus){
+                MainParameters.current.MaxOfAliensNumber = MainParameters.current.MaxOfAliensNumber + step;
+            } 
+            else{
+                if (MainParameters.current.MaxOfAliensNumber - step >=25){
+                    MainParameters.current.MaxOfAliensNumber = MainParameters.current.MaxOfAliensNumber - step;
+                }
+                
+            }
+        }
     }
 }

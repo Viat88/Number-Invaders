@@ -102,6 +102,7 @@ public class AlienManager : MonoBehaviour
 
         if (!b){
             gameObject.transform.position = new Vector3(50,0,20);
+            gameObject.transform.Rotate(0,-90,0);
             HasCameInTheGameArea = true;
         }
     }
