@@ -347,6 +347,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 519403182415866052, guid: 18b46115673376443aa210148b2bbd57,
+        type: 3}
+      propertyPath: sumFactor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 519403182415866052, guid: 18b46115673376443aa210148b2bbd57,
+        type: 3}
+      propertyPath: miniShootSpeed
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 519403182415866052, guid: 18b46115673376443aa210148b2bbd57,
+        type: 3}
+      propertyPath: numberOfAliens
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 519403182415866054, guid: 18b46115673376443aa210148b2bbd57,
         type: 3}
       propertyPath: m_Name
@@ -588,6 +603,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Number Invaders
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116545640068408731, guid: 55527058490c57d4f886342e8c1bc175,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6116545640068408733, guid: 55527058490c57d4f886342e8c1bc175,
         type: 3}

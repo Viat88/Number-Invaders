@@ -189,7 +189,7 @@ TextMesh:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4293394179
+    rgba: 4278190080
 --- !u!1 &3159786430852671681
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,10 +635,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: 
-  timeToChooseButton: 3
-  button: {fileID: 5834903708235259405}
-  initialColor: {r: 0.019607844, g: 0.67058825, b: 0.03529412, a: 0}
-  hoverColor: {r: 0.33578196, g: 0.5660378, b: 0.24243504, a: 0}
 --- !u!114 &2130305255405736892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,5 +648,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 5834903708235259405}
-  initialColor: {r: 0.019607844, g: 0.67058825, b: 0.03529412, a: 0}
-  hoverColor: {r: 0.3372549, g: 0.5647059, b: 0.24313726, a: 0}
+  initialColor: {r: 0.34117648, g: 0.34117648, b: 0.34117648, a: 0}
+  hoverColor: {r: 1, g: 1, b: 1, a: 0}

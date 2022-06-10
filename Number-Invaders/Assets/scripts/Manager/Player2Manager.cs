@@ -94,13 +94,17 @@ public class Player2Manager : MonoBehaviour
         weaponHolded = weaponOn;                                         // The gun holding by player is the one he was trying to take
         weaponOn = null;
 
-        if (weaponHolded.name.Contains("Ray Gun")){
-            weaponHolded.transform.parent = transform;                   // The gun is now a child of player
-        }
-
         if (weaponHolded.name == "Gun Turret"){
-            Debug.Log("ok2");
             GunTuretManager.current.PlayerHolding("Player2");
         }
+
+        else{
+            if (weaponHolded.name.Contains("Ray Gun")){
+                weaponHolded.transform.parent = transform;                   // The gun is now a child of player
+        }
+        }
+        
+
+    
     }
 }

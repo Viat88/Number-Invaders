@@ -77,8 +77,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 3105618674832773537}
-  initialColor: {r: 0.019607844, g: 0.67058825, b: 0.03529412, a: 0}
-  hoverColor: {r: 0.3372549, g: 0.5647059, b: 0.24313726, a: 0}
+  initialColor: {r: 0.34117648, g: 0.34117648, b: 0.34117648, a: 0}
+  hoverColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1001 &3068370932823112020
 PrefabInstance:
   m_ObjectHideFlags: 0

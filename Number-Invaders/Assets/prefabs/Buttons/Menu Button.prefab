@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 3159605844582724216}
   - component: {fileID: 3460396317594470606}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Menu Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -429,7 +429,7 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: af251da01e320414181508b307d6f2ae, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4293394179
+    rgba: 4278190080
 --- !u!1 &6508296847779422676
 GameObject:
   m_ObjectHideFlags: 0
