@@ -278,6 +278,11 @@ PrefabInstance:
       propertyPath: m_Text
       value: Victory !
       objectReference: {fileID: 0}
+    - target: {fileID: 6116545640068408731, guid: 55527058490c57d4f886342e8c1bc175,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6116545640068408733, guid: 55527058490c57d4f886342e8c1bc175,
         type: 3}
       propertyPath: m_RootOrder
