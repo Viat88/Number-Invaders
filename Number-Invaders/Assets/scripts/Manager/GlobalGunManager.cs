@@ -4,35 +4,36 @@ using UnityEngine;
 
 public class GlobalGunManager : MonoBehaviour
 {
+    /*
+        Manage all guns
+    */
 
-    public GameObject gunPrefab;
-    private List<int> availableGunList;
+    public GameObject gunPrefab;                                                // Prefab of guns
+    private List<int> availableGunList;                                         // List of gun available
 
-    void Awake(){
-        
-    }
+///////////////////////// START FUNCTIONS ///////////////////////////////////
+
     void Start()
     {
-        availableGunList = MainParameters.current.ListGunAvailable;
-        CreateGuns();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        availableGunList = MainParameters.current.ListGunAvailable;            // We set ListGunAvailable
+        CreateGuns();                                                          // We create guns
     }
 
 
 ////////////////////////////////////////////////////////////
 
+    /*
+        Creates guns
+    */
     private void CreateGuns(){
         for (int i=0; i<availableGunList.Count; i++){
             CreateGun(i, availableGunList[i]);
         }
     }
 
-
+    /*
+        Create a gun with its number and its index (to know position)
+    */
     private void CreateGun(int index, int number){
 
         Vector3 gunPosition = GetGunPositions(index);
@@ -40,6 +41,9 @@ public class GlobalGunManager : MonoBehaviour
         newGun.name = number.ToString();
     }
 
+    /*
+        Gives the position of the gun according to its index
+    */
     private Vector3 GetGunPositions(int index){
         if(index == 0){
             return new Vector3 (30,0,50);

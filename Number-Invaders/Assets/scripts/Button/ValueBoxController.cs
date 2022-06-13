@@ -4,19 +4,25 @@ using UnityEngine;
 
 public class ValueBoxController : MonoBehaviour
 {
-    public TextMesh valueText;
-    public string parameter;
+    /*
+        Controller of boxes contining values associated with plus and minus button
+    */
+    public TextMesh valueText;                                                      // The text of the box
+    public string parameter;                                                        // parameter associated
 
 ///////////////////////// START FUNCTIONS /////////////////////////////////// 
 
     void Start()
     {
-        int value = GetParameterValue();
-        ChangeValueText(value);       
+        int value = GetParameterValue();                                            // We get the initial value of the parameter
+        ChangeValueText(value);                                                     // We update the text    
     }
 
 ////////////////////////////////////////////////////////////
 
+    /*
+        Regarding the associated parameter, we set the listener and we get the value of the parameter
+    */
     private int GetParameterValue(){
         
         if (parameter == "numberOfAliens"){
@@ -51,6 +57,9 @@ public class ValueBoxController : MonoBehaviour
 
 ////////////////////////////////////////////////////////////
 
+    /*
+        Change the text of the box
+    */
     private void ChangeValueText(int newValue){
         valueText.text = newValue.ToString();
     }

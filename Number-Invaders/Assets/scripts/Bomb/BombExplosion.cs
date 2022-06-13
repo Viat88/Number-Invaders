@@ -4,26 +4,13 @@ using UnityEngine;
 
 public class BombExplosion : MonoBehaviour
 {
+    /*
+        Manage the explosion of the bomb when it touches the ground
+    */
 
     public GameObject shockWavePrefab;
 
 
-///////////////////////// START FUNCTIONS ///////////////////////////////////
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
-////////////////////////////////////////////////////////////
 
     private void OnTriggerEnter(Collider other) 
     {
@@ -34,12 +21,8 @@ public class BombExplosion : MonoBehaviour
             ShockWave();
             Destroy(gameObject);                            // We destroy the object
             
-            
-            
         }
     }
-
-
 
     private void ShockWave(){
         GameObject shockWave = Instantiate(shockWavePrefab, transform.position, new Quaternion(0,0,0,0));

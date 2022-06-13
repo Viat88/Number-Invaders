@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ParabolicMovement : MonoBehaviour
 {
+    /*
+        Makes the object do a parabolic movement
+    */
 
     private Vector3 initialPoint;
     private Vector3 targetPoint;

@@ -5,6 +5,10 @@ using UnityEngine;
 public class GunManager : MonoBehaviour
 {
 
+    /*
+        Manage only the gun associated
+    */
+
     [HideInInspector]
     public bool gunHolded = false;                                          // Is the gun holded by a player
     private bool isInvincible = false;                                       // Is the player invicible (after being touched by an alien's missile)
@@ -12,20 +16,18 @@ public class GunManager : MonoBehaviour
     public float invincibilityFlashDelay = 0.15f;                            // How fast has to be the invicibility's flash
     public GameObject gunText;                                               // Text of the gun
     public GameObject gunModel;                                              // Model of the gun
-    private Vector3 initialPosition;
+    private Vector3 initialPosition;                                         // Initial position of the gun
 
 
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////  
 
-    // Start is called before the first frame update
     void Start()
     {
-        initialPosition = transform.position;
-        gunText.GetComponent<TextMesh>().text = gameObject.name;
+        initialPosition = transform.position;                               // We set the initial position
+        gunText.GetComponent<TextMesh>().text = gameObject.name;            // And its name
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Player1Manager.current.weaponHolded == gameObject || Player2Manager.current.weaponHolded == gameObject){  // If one player is holding this gun
@@ -42,6 +44,7 @@ public class GunManager : MonoBehaviour
 
 ///////////////////////// TRIGGER FUNCTIONS /////////////////////////////////  
 
+    /* If the gun is holded by a player and touched by an alien missile, players loose a life */
     private void OnTriggerEnter( Collider other){
 
         if ((other.CompareTag("AlienMissile") || other.CompareTag("Bomb wave")) && gunHolded){

@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class SideLightsManager : MonoBehaviour
 {
+    /*
+        Manager of sight lights
+    */
 
-    public static SideLightsManager current;
-    public GameObject westLine;
+    public static SideLightsManager current;                // Unique SideLightsManager
+
+    // Gameobject of lines
+    public GameObject westLine;                             
     public GameObject eastLine;
     public GameObject northLine;
     public GameObject southLine;
+
+    // Is each line activated
     public bool westLineActivated;
     public bool eastLineActivated;
     public bool northLineActivated;
     public bool southLineActivated;
+
+    // Delay of the flash
     public float FlashDelay;
 
 
@@ -32,17 +41,13 @@ public class SideLightsManager : MonoBehaviour
     }
 
     void Start(){
-        AlienManager.current.OnHasCameInGameArea += DesactivateAll;
+        AlienManager.current.OnHasCameInGameArea += DesactivateAll;             // We set the listener
     }
 
-    void Update(){
-        /*if (AlienManager.current.hasCameInTheGameArea){
-            DesactivateAll(true);
-        }*/
-    }
 
 ////////////////////////////////////////////////////////////
 
+    /* Activate the adequate light depending on the string given */
     public void LineActivation(string side){
         DesactivateAll(true);
 
@@ -67,6 +72,9 @@ public class SideLightsManager : MonoBehaviour
         } 
     }
 
+////////////////////////////////////////////////////////////
+
+    /* Desactivate all lights */
     private void DesactivateAll(bool b){
 
         if(b){
@@ -76,6 +84,10 @@ public class SideLightsManager : MonoBehaviour
             southLineActivated = false;
         }
     }
+
+////////////////////////////////////////////////////////////
+
+    /* All Coroutine to make light flash */
 
     public IEnumerator WestFlashCoroutine(){
 

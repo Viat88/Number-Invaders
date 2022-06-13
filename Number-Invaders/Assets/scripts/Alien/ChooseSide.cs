@@ -5,24 +5,22 @@ using UnityEngine;
 public class ChooseSide : MonoBehaviour
 {
 
-    private string side;
-    private float partOfTheSide;
-    public int initialDistance;
-    private GameObject aliensGroup;
+    private string side;                                    // The side aliens are coming from
+    private float partOfTheSide;                            // From which point is it coming (in the middle of the side, the 3/4, ...)
+    public int initialDistance;                             // The distance from the side aliens start (in order they don't come directly)
+    private GameObject aliensGroup;                         // The aliens group gameObject
 
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
 
     void Start()
     {
-        aliensGroup = AlienManager.current.gameObject;
+        aliensGroup = AlienManager.current.gameObject;              // We set aliensGroup 
+        AlienManager.current.OnNewTrajectory += NewTrajectory;      // We set the listener of newTrajectory
+
         NewTrajectory(true);
-        AlienManager.current.OnNewTrajectory += NewTrajectory;
+        
     }
-
-    void Update()
-    {}
-
 
 ////////////////////////////////////////////////////////////
 
@@ -66,22 +64,22 @@ public class ChooseSide : MonoBehaviour
 
         if (side == "West"){
             aliensAngle = new Vector3(0, -90 ,0); 
-            AlienManager.current.ChangeAliensDirection(new Vector3(0,0,0), new Vector3(0,180,0));
+            AlienManager.current.ChangeMissilesDirection(new Vector3(0,0,0), new Vector3(0,180,0));
         }
 
         if (side == "East"){
             aliensAngle = new Vector3(0, 90 ,0);
-            AlienManager.current.ChangeAliensDirection(new Vector3(0,180,0), new Vector3(0,0,0));
+            AlienManager.current.ChangeMissilesDirection(new Vector3(0,180,0), new Vector3(0,0,0));
         }
 
         if (side == "South"){
             aliensAngle = new Vector3(0, 180 ,0);
-            AlienManager.current.ChangeAliensDirection(new Vector3(0,90,0), new Vector3(0,-90,0));
+            AlienManager.current.ChangeMissilesDirection(new Vector3(0,90,0), new Vector3(0,-90,0));
         }
 
         if (side == "North"){
             aliensAngle = new Vector3(0, 0 ,0);
-            AlienManager.current.ChangeAliensDirection(new Vector3(0,-90,0), new Vector3(0,90,0));
+            AlienManager.current.ChangeMissilesDirection(new Vector3(0,-90,0), new Vector3(0,90,0));
         }
 
         aliensGroup.transform.localEulerAngles = aliensAngle;
@@ -111,14 +109,17 @@ public class ChooseSide : MonoBehaviour
 
 ////////////////////////////////////////////////////////////  
 
+    /*
+        If a new trajectory is needed from MainParameters, it does it
+    */
     public void NewTrajectory(bool b){
 
         if (b){
-            AlienManager.current.hasCameInTheGameArea = false;
-            ChooseTheSide();
-            UpdateDirection();
-            UpdatePosition();
-            AlienManager.current.IsNewTrajectory = false;
+            AlienManager.current.hasCameInTheGameArea = false;              // Aliens haven't already come inside the game area
+            ChooseTheSide();                                                // We randomly choose a side
+            UpdateDirection();                                              // We update the direction of aliens group
+            UpdatePosition();                                               // We update its position
+            AlienManager.current.IsNewTrajectory = false;                   // We don't need a newTrajectory no more
         }
         
         

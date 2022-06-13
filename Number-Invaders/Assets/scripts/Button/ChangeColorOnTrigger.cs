@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ChangeColorOnTrigger : MonoBehaviour
 {
+    /*
+        Chnage the color of the button when a player touches it
+    */
 
     public GameObject button;
     private MeshRenderer model;

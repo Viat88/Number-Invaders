@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ShootBombs : MonoBehaviour
 {
+    /*
+        Manage the bomb shoot of aliens
+    */
 
     public float delayBetweenBombsSalvo;
     public int numberOfBomb;

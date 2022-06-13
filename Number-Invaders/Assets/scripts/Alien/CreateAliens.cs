@@ -20,12 +20,6 @@ public class CreateAliens : MonoBehaviour
         CreateAliensGroup();                        // We create aliens group before all
     }
 
-    void Start(){
-    }
-
-    void Update(){}
-
-
 ////////////////////////////////////////////////////////////
 
     /* Calls CreateAlien() until we have enough aliens */

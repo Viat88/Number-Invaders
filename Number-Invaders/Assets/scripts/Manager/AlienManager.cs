@@ -7,13 +7,15 @@ using System;
 public class AlienManager : MonoBehaviour
 {
 
-    public static AlienManager current;
-    public List<GameObject> alienList = new List<GameObject>();
+    /*
+        Manage the aliens group
+    */
+
+    public static AlienManager current;                                 // Unique AlienManager
+    public List<GameObject> alienList = new List<GameObject>();         // List of aliens
     
     
 
-
-    //[HideInInspector]
     public int aliensNumber;                                            // Number of aliens that we want
 
     [HideInInspector]
@@ -25,12 +27,15 @@ public class AlienManager : MonoBehaviour
 
     
 
-    public bool isInvincible = false;
-    private bool hasAlreadyBeenInvicible = false;
+    public bool isInvincible = false;                                  // Are aliens invincible
+    private bool hasAlreadyBeenInvicible = false;                      // Have they already been invincible
 
 
 ///////////////////////// Listeners ///////////////////////////////////    
 
+    /*
+        Listener for needing a new trajectory
+    */
     public event Action<Boolean> OnNewTrajectory;
     public void NewTrajectory(Boolean b){
         OnNewTrajectory?.Invoke(b);
@@ -49,7 +54,9 @@ public class AlienManager : MonoBehaviour
 
 
 
-
+    /*
+        Listener about if they have already come inside the game area
+    */
     public event Action<Boolean> OnHasCameInGameArea;
     public void HasCameInGameArea(Boolean b){
         OnHasCameInGameArea?.Invoke(b);
@@ -84,19 +91,23 @@ public class AlienManager : MonoBehaviour
 
     void Start()
     {   
-        MainParameters.current.OnAlienMoveChanged += CanAliensMove;
-        CanAliensMove(MainParameters.current.CanAlienMove);
+        MainParameters.current.OnAlienMoveChanged += CanAliensMove;                 // We set listener of is aliens moving
+        CanAliensMove(MainParameters.current.CanAlienMove);                         // We do some actions if it can't move
     }
 
     void Update()
     {
-        if (!hasAlreadyBeenInvicible){
-            CheckAliensNumber();
+        if (!hasAlreadyBeenInvicible){                                              // If aliens haven't been invincible yet
+            CheckAliensNumber();                                                    // We check if it has to be
         } 
     }
 
 ////////////////////////////////////////////////////////////
 
+    /*
+        We disable the script Translate if it can't move, we set the position of aliens inside the game area, its rotation and we update 
+        HasCameInTheGameArea
+    */
     private void CanAliensMove(bool b){
         gameObject.GetComponent<Translate>().enabled = b;
 
@@ -109,7 +120,10 @@ public class AlienManager : MonoBehaviour
 
 ////////////////////////////////////////////////////////////
 
-    public void ChangeAliensDirection(Vector3 newLeftMissileDirection, Vector3 newRightMissileDirection){
+    /*
+        Chnage direction of missiles
+    */
+    public void ChangeMissilesDirection(Vector3 newLeftMissileDirection, Vector3 newRightMissileDirection){
         leftMissileDirection = newLeftMissileDirection;
         rightMissileDirection = newRightMissileDirection;
     }
@@ -117,6 +131,9 @@ public class AlienManager : MonoBehaviour
 
 ////////////////////////////////////////////////////////////
 
+    /*
+        Remove the alien destroyed from the list
+    */
     public void RemoveAlienFromList( GameObject alien){
         alienList.Remove(alien);
         if (alienList.Count == 0){
@@ -126,12 +143,18 @@ public class AlienManager : MonoBehaviour
 
 ////////////////////////////////////////////////////////////
 
+    /*
+        Destroy the aliens' group
+    */
     public void DestroyAliensGroup(){
         Destroy(gameObject);
     }
 
 ////////////////////////////////////////////////////////////
 
+    /*
+        Check how many aliens are still alive
+    */
     private void CheckAliensNumber(){
 
         if (alienList.Count <= aliensNumber/2){
@@ -141,6 +164,9 @@ public class AlienManager : MonoBehaviour
 
 ////////////////////////////////////////////////////////////
 
+    /*
+        Makes alien invincible
+    */
     private void MakeAliensInvicible(){
         hasAlreadyBeenInvicible = true;
         isInvincible = true;

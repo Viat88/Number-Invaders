@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class ShowInvincibility : MonoBehaviour
 {
+    /*
+        Only set the invincibility when MainParameters asks
+    */
 
     public GameObject invincibilitySphere;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         invincibilitySphere.SetActive(AlienManager.current.isInvincible);

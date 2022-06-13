@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TouchedByLaser : MonoBehaviour
 {
+    /*
+        Manage when an alien is touched by the laser of a gun
+    */
 
     public TextMesh alienText;                                                 // Alien's text containing its number
     private int number;                                                        // Number of the alien

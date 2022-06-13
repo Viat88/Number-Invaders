@@ -5,6 +5,10 @@ using UnityEngine;
 public class BombShockWave : MonoBehaviour
 {
 
+    /*
+        Manage the shock wave produced by the bomb explosion
+    */
+
     public float maxSize;
     private float timeScale = 0;
     public float speed;
@@ -24,8 +28,6 @@ public class BombShockWave : MonoBehaviour
         timeScale += Time.deltaTime;
         UpdateSize();
         DestroyIfMaxSize();
-        
-        
     }
 
 

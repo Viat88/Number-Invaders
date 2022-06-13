@@ -4,17 +4,9 @@ using UnityEngine;
 
 public class TouchedByTurret : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    /*
+        If an alien is touched by the gun turret, it destroys invincibility
+    */
 
     private void OnTriggerEnter(Collider other){
 

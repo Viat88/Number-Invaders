@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class LoadSceneTrigger : MonoBehaviour
 {
 
+    /*
+        Load the scene specified when player enter in trigger
+    */
+
     public string sceneToLoad;
     private float timeToChooseButton;
     private bool onButton = false;

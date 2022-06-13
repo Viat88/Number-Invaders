@@ -18,25 +18,6 @@ public class GameStateManager : MonoBehaviour
     private int numberOfLifes = 3;                                                   // Number of lifes that players have
     
     
-///////////////////////// LISTENERS /////////////////////////////////// 
-
-    public event Action<Boolean> OnIsPausedChanged;
-    public void IsPausedChanged(Boolean b){
-        OnIsPausedChanged?.Invoke(b);
-    }
-
-    [SerializeField]
-    private Boolean isPaused = false;
-    public Boolean IsPaused{
-        get => isPaused;
-        set
-        {
-            isPaused = value;
-            IsPausedChanged(isPaused); //Fire the event
-        }
-    }
-
-
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
 
@@ -50,14 +31,6 @@ public class GameStateManager : MonoBehaviour
         {
             Destroy(obj: this);
         }
-    }
-
-
-    // Start is called before the first frame update
-    void Start(){}
-
-    // Update is called once per frame
-    void Update(){
     }
 
 ////////////////////////////////////////////////////////////
@@ -94,6 +67,7 @@ public class GameStateManager : MonoBehaviour
 
 ////////////////////////////////////////////////////////////
 
+    /* Start Victory scene */
     public void Victory(){
         SceneManager.LoadScene("Victory");
     }

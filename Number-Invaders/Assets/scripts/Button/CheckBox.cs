@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class CheckBox : MonoBehaviour
 {
+
+    /*
+        Check the box when the paramater is selected or the player is on the button
+    */
+
     public string parameter;
     public GameObject checkObject;
     private bool alreadyDone = false;

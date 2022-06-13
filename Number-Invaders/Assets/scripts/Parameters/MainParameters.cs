@@ -5,12 +5,19 @@ using System;
 
 public class MainParameters : MonoBehaviour
 {
-    public static MainParameters current;
-    public float timeToChooseButton;
+    /*
+        Script that contains all main parameters
+    */
+    
+    public static MainParameters current;                       // Unique MainParameters
+    public float timeToChooseButton;                            // Time to choose a button
 
 
 ///////////////////////// LISTENERS /////////////////////////////////// 
 
+    /*
+        Listener of are aliens able to shoot missiles
+    */
     public event Action<Boolean> OnCanShootMissileChanged;
     public void CanShootMissileChanged(Boolean b){
         OnCanShootMissileChanged?.Invoke(b);
@@ -28,7 +35,9 @@ public class MainParameters : MonoBehaviour
     }
 
 
-
+    /*
+        Listener of are aliens able to shoot bombs
+    */
     public event Action<Boolean> OnCanShootBombChanged;
     public void CanShootBombChanged(Boolean b){
         OnCanShootBombChanged?.Invoke(b);
@@ -45,7 +54,9 @@ public class MainParameters : MonoBehaviour
         }
     }
 
-
+    /*
+        Listener of are aliens able to move
+    */
     public event Action<Boolean> OnAlienMoveChanged;
     public void AlienMoveChanged(Boolean b){
         OnAlienMoveChanged?.Invoke(b);
@@ -62,7 +73,9 @@ public class MainParameters : MonoBehaviour
         }
     }
 
-
+    /*
+        Listener of how many aliens we want
+    */
     public event Action<int> OnNumberOfAliensChanged;
     public void NumberOfAliensChanged(int n){
         OnNumberOfAliensChanged?.Invoke(n);
@@ -80,7 +93,9 @@ public class MainParameters : MonoBehaviour
     }
 
 
-
+    /*
+        Listener of many factors aliens' number can have
+    */
     public event Action<int> OnSumFactorChanged;
     public void SumFactorChanged(int n){
         OnSumFactorChanged?.Invoke(n);
@@ -97,6 +112,9 @@ public class MainParameters : MonoBehaviour
         }
     }
 
+    /*
+        Listener what's the maximum value of aliens' number
+    */
     public event Action<int> OnMaxOfAliensNumberChanged;
     public void MaxOfAliensNumberChanged(int n){
         OnMaxOfAliensNumberChanged?.Invoke(n);
@@ -114,7 +132,9 @@ public class MainParameters : MonoBehaviour
     }
 
 
-
+    /*
+        Listener of what is the minimum shoot speed
+    */
     public event Action<int> OnMiniShootSpeedChanged;
     public void MiniShootSpeedChanged(int n){
         OnMiniShootSpeedChanged?.Invoke(n);
@@ -131,7 +151,9 @@ public class MainParameters : MonoBehaviour
         }
     }
 
-
+    /*
+        Listener of what is the minimum shoot length
+    */
     public event Action<int> OnMiniShootLengthChanged;
     public void MiniShootLengthChanged(int n){
         OnMiniShootLengthChanged?.Invoke(n);
@@ -149,6 +171,9 @@ public class MainParameters : MonoBehaviour
     }
 
 
+    /*
+        Listener of which guns are available
+    */
     public event Action<List<int>> OnGunAvailableChanged;
     public void GunAvailableChanged(List<int> list){
         OnGunAvailableChanged?.Invoke(list);
@@ -179,13 +204,5 @@ public class MainParameters : MonoBehaviour
         }
     }
 
-    void Start()
-    {}
-
-
-    void Update()
-    {}
-
-////////////////////////////////////////////////////////////
 
 }

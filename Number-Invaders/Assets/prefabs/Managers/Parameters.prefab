@@ -51,8 +51,8 @@ MonoBehaviour:
   numberOfAliens: 5
   sumFactor: 7
   maxOfAliensNumber: 100
-  miniShootSpeed: 50
-  miniShootLength: 5
+  miniShootSpeed: 250
+  miniShootLength: 10
   listGunAvailable: 020000000300000005000000
 --- !u!114 &7170269393057359567
 MonoBehaviour:

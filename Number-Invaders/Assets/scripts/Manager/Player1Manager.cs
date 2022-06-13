@@ -5,11 +5,11 @@ using UnityEngine;
 public class Player1Manager : MonoBehaviour
 {
     public static Player1Manager current;                      // Unique Player1Manager
-    private GameObject weaponOn;
+    private GameObject weaponOn;                               // The weapon on which the player is
     [HideInInspector]
-    public GameObject weaponHolded=null;                            // the gun the player has
+    public GameObject weaponHolded=null;                       // the gun the player has
     public float timeToTakeGun;                                // time player has to be on a gun to take it
-    private float time;
+    private float time;                                        // Elapsed time
 
 
 
@@ -27,22 +27,20 @@ public class Player1Manager : MonoBehaviour
         }
     }
 
-
-    // Start is called before the first frame update
     void Start(){
-        time = timeToTakeGun;
+        InitialiseTime();                                       // We initialise time
     }
 
-    // Update is called once per frame
     void Update(){
-        TimeManager();
-        if (time<=0 && weaponOn != null){
-            TakeGun();
+        time -= Time.deltaTime;                                 // we update time
+        if (time<=0 && weaponOn != null){                       // If time is elapsed and player is on a gun
+            TakeGun();                                          // We take the gun
         }
     }
 
 ///////////////////////// TRIGGER FUNCTIONS ///////////////////////////////// 
 
+    /* If player exits the gun turret,he is no more on a gun and if he was holding it, he is no more holding a gun */
     private void OnTriggerExit(Collider other){
         
         if (other.name == "Gun Turret"){
@@ -56,13 +54,7 @@ public class Player1Manager : MonoBehaviour
 
 ////////////////////////////////////////////////////////////
 
-    private void TimeManager(){
-
-        if (weaponOn != null){
-            time -= Time.deltaTime;
-        }
-    }
-
+    /* Change the weapon on which player is with the weapon given */
     public void ChangeWeaponOn(GameObject newWeaponOn){
 
         if (weaponOn != newWeaponOn){
@@ -72,7 +64,7 @@ public class Player1Manager : MonoBehaviour
         
     }
 
-
+    /* Initialise the time variable */ 
     private void InitialiseTime(){
         time = timeToTakeGun;
     }

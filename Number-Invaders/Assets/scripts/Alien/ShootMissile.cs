@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ShootMissile : MonoBehaviour
 {
+    /*
+        Manage the missile shoot of aliens
+    */
 
     public float timeBetweenAlienShoot;
     public int partAliensShooting;
