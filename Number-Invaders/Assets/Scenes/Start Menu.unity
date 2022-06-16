@@ -354,6 +354,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 519403182415866052, guid: 18b46115673376443aa210148b2bbd57,
         type: 3}
+      propertyPath: canAlienMove
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 519403182415866052, guid: 18b46115673376443aa210148b2bbd57,
+        type: 3}
       propertyPath: miniShootSpeed
       value: 250
       objectReference: {fileID: 0}

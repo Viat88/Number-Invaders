@@ -53,7 +53,10 @@ public class ChooseSide : MonoBehaviour
             partOfTheSide = Random.value*60 + 20; // to have it between 20 and 80
         }
 
-        SideLightsManager.current.LineActivation(side);
+        if (MainParameters.current.CanAlienMove){
+            SideLightsManager.current.LineActivation(side);
+        }
+        
     }
 
 ////////////////////////////////////////////////////////////

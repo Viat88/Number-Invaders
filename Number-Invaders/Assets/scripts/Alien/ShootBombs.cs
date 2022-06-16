@@ -43,10 +43,13 @@ public class ShootBombs : MonoBehaviour
 
     private IEnumerator ShootBombSalvoRoutine(){
         while (canShoot){
+
+            yield return new WaitForSeconds(delayBetweenBombsSalvo);
+
             if (AlienManager.current.hasCameInTheGameArea){
                 AlienBombShoot();
             }
-            yield return new WaitForSeconds(delayBetweenBombsSalvo);
+            
         }
     }
 
@@ -60,7 +63,9 @@ public class ShootBombs : MonoBehaviour
             newBomb.name = count.ToString();
             SoundManager.current.PlayBombShootSound();
             count += 1;
+
             yield return new WaitForSeconds(delayBetweenSuccessiveBombs);
+            
         }
     }
 

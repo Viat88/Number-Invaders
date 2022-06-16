@@ -51,11 +51,13 @@ public class ShootMissile : MonoBehaviour
     {
         while (canShoot)
         {   
+            yield return new WaitForSeconds(timeBetweenAlienShoot); 
+            
             if (AlienManager.current.hasCameInTheGameArea){
                 AliensMissileShoot(); 
             }
             
-            yield return new WaitForSeconds(timeBetweenAlienShoot); 
+            
         } 
     }
 

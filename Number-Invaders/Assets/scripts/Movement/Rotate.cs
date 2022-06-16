@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Rotate : MonoBehaviour
 {
+    /*
+        Makes the object rotating
+    */
 
     public Vector3 rotationSpeed;                           // The rotation's speed
 
