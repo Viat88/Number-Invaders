@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponHolded: {fileID: 0}
-  timeToTakeGun: 0
+  timeToTakeGun: 2
 --- !u!1001 &10765839431379261
 PrefabInstance:
   m_ObjectHideFlags: 0

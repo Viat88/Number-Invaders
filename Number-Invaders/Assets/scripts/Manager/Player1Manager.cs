@@ -89,7 +89,6 @@ public class Player1Manager : MonoBehaviour
         weaponHolded = weaponOn;                                         // The gun holding by player is the one he was trying to take
         weaponOn = null;
 
-        
         if (weaponHolded.name == "Gun Turret"){
             GunTuretManager.current.PlayerHolding("Player1");
         }

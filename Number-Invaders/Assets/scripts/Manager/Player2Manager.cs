@@ -48,7 +48,9 @@ public class Player2Manager : MonoBehaviour
         
         if (other.name == "Gun Turret"){
             ChangeWeaponOn(null);
-            LetGun();
+            if (weaponHolded.name == "Gun Turret"){
+                LetGun();
+            }
             GunTuretManager.current.NoPlayerHolding();
         }
     }
@@ -95,7 +97,7 @@ public class Player2Manager : MonoBehaviour
         }
 
         else{
-            if (weaponHolded.name.Contains("Ray Gun")){
+            if (weaponHolded.CompareTag("Weapon")){
                 weaponHolded.transform.parent = transform;                   // The gun is now a child of player
         }
         }
