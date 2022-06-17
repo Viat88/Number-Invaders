@@ -39,36 +39,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1216152309911149970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1925949434552868293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f2336de99693ed479abae350e1d9e9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onAGun: 0
-  gunTaken: {fileID: 0}
-  timeToTakeGun: 0
---- !u!114 &1216152310363272146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1925949433745760257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3cde81f9571862408a281b2e8084d67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onAGun: 0
-  gunTaken: {fileID: 0}
-  timeToTakeGun: 2
 --- !u!1 &1216152310374038290
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +273,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1216152310363272146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925949433745760257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3cde81f9571862408a281b2e8084d67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponHolded: {fileID: 0}
+  timeToTakeGun: 2
+--- !u!114 &1216152309911149970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925949434552868293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f2336de99693ed479abae350e1d9e9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponHolded: {fileID: 0}
+  timeToTakeGun: 0
 --- !u!1001 &10765839431379261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -669,6 +667,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6137497491829922050, guid: a2aaaa094093a294aade9f5a5ce62bbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 827287611203479366, guid: a2aaaa094093a294aade9f5a5ce62bbb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a2aaaa094093a294aade9f5a5ce62bbb, type: 3}
@@ -769,6 +772,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Yellow Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137497491829922050, guid: a2aaaa094093a294aade9f5a5ce62bbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 827287611203479366, guid: a2aaaa094093a294aade9f5a5ce62bbb, type: 3}
