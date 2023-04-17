@@ -338,6 +338,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MR Foundations
       objectReference: {fileID: 0}
+    - target: {fileID: 1216152310776242364, guid: e81ecbb14bf44e6438a94b971d02fc7a,
+        type: 3}
+      propertyPath: live
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e81ecbb14bf44e6438a94b971d02fc7a, type: 3}
 --- !u!1001 &2071946181
@@ -355,12 +360,12 @@ PrefabInstance:
     - target: {fileID: 519403182415866052, guid: 18b46115673376443aa210148b2bbd57,
         type: 3}
       propertyPath: canAlienMove
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 519403182415866052, guid: 18b46115673376443aa210148b2bbd57,
         type: 3}
       propertyPath: miniShootSpeed
-      value: 250
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 519403182415866052, guid: 18b46115673376443aa210148b2bbd57,
         type: 3}
